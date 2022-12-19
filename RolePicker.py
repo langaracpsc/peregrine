@@ -12,9 +12,21 @@ class Role():
             value=self.id, 
             emoji=self.emoji
         )
-    
+class RoleMenuButton(discord.ui.View): 
+    def __init__(self):
+        super().__init__(timeout=None)
+        
+    @discord.ui.button(label="Choose Roles!", custom_id="RoleMenuButton", style=discord.ButtonStyle.success) 
+    async def button_callback(self, button, interaction:discord.Interaction):
+        await interaction.response.send_message(
+            content="Pick your roles:", 
+            ephemeral=True, 
+            delete_after=300, 
+            view=RolePickerMenu(interaction)
+        )
+
 # Defines a simple View that allows the user to use the Select menu.
-class RolePicker(discord.ui.View):
+class RolePickerMenu(discord.ui.View):
     def __init__(self, interaction, roles=None):
         super().__init__(timeout=None)
         
@@ -129,8 +141,8 @@ class Dropdown(discord.ui.Select):
         
         # these methods look for an id property in whatever you pass to them
         # * unpacks lists
-        await interaction.user.add_roles(*add, reason="role menu")
-        await interaction.user.remove_roles(*rem, reason="role menu")
+        await interaction.user.add_roles(*add)
+        await interaction.user.remove_roles(*rem)
         
         await interaction.response.send_message(f"Updated your roles!", ephemeral=True, delete_after=5)
         
