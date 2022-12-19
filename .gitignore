@@ -160,3 +160,6 @@ cython_debug/
 #.idea/
 
 settings.json
+
+# sqlite3
+*.sqlite 
