@@ -30,7 +30,7 @@ class EmailManager():
         self.webhook = email_sender_webhook
         self.role:discord.Role = None
         self.logging:discord.TextChannel = None
-        self.MAX_EMAIL_ATTEMPTS = 50
+        self.MAX_EMAIL_ATTEMPTS = 2
         self.MAX_CODE_ATTEMPTS = 5
          
         self.connection = sqlite3.connect(database_name)
@@ -51,6 +51,7 @@ class EmailManager():
     async def start_verification(self, email, interaction:discord.Interaction):
         
         search = self.cursor.execute("SELECT * FROM emails WHERE email=?", (email,))
+        
         if self.cursor.fetchone() is not None:
             await interaction.response.send_message("Email already in use.", ephemeral=True)
             return
@@ -111,11 +112,12 @@ class EmailManager():
 
     
     # method to check verification code and handle it
-    async def check_verification_code(self, code, interaction:discord.Interaction):
+    async def check_verification_code(self, code:str, interaction:discord.Interaction):
         
         id = interaction.user.id
         search = self.cursor.execute("SELECT * FROM emails WHERE discord_id=?", (id,))
-        user_info = search.fetchone()
+        
+        user_info: tuple[str] = search.fetchone()
         
         if user_info is None:
             await interaction.response.send_message("Enter your email first.", ephemeral=True)
@@ -123,7 +125,7 @@ class EmailManager():
         elif user_info[5] >= self.MAX_CODE_ATTEMPTS:
             await interaction.response.send_message("You have been ratelimited. Please contact a moderator.", ephemeral=True)
 
-        elif code == user_info[4]:            
+        elif code.strip() == user_info[4]:             
             self.update_field(id, "datetime", int(time.time()))
             self.update_field(id, "status", "verified")
             
@@ -132,7 +134,6 @@ class EmailManager():
 
         else:
             self.update_field(id, "code_attempts", user_info[5]+1)
-            
             await interaction.response.send_message("Code incorrect.", ephemeral=True)
         
     
@@ -145,7 +146,7 @@ class EmailManager():
         self.connection.commit()
         
     def clear_data(self, discord_id):
-        self.cursor.execute("DELETE FROM emails WHERE discord_id=?", (discord_id,))
+        self.cursor.execute("DELETE FROM emails WHERE discord_id = ?", (int(discord_id),))
         self.connection.commit()
     
         
