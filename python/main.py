@@ -57,10 +57,10 @@ async def update_docker(interaction:discord.Interaction):
     if os.getenv("WATCHTOWER_TOKEN") == None:
         await interaction.respond("No watchtower token present.", ephemeral=True)
     else:
-        url     = 'http://watchtower:8080/v1/update'
-        payload = {"Authorization": "Bearer refresh"}
         try:
-            requests.post(url, data=payload)
+            url     = 'http://watchtower:8080/v1/update'
+            headers = {"Authorization": f"Bearer {os.getenv('WATCHTOWER_TOKEN')}"}
+            requests.post(url, headers=headers)
             await interaction.respond("Update request sent to the cloud.", ephemeral=True)
         except Exception as e:
             await interaction.respond("Could not establish a connection: " + str(e), ephemeral=True)
