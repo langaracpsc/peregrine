@@ -58,9 +58,8 @@ async def update_docker(interaction:discord.Interaction):
         await interaction.respond("No watchtower token present.", ephemeral=True)
     else:
         url     = 'watchtower:8080/v1/update'
-        payload = {}
-        headers = {f"Authorization: Bearer {os.getenv('WATCHTOWER_TOKEN')}"}
-        res = requests.post(url, data=payload, headers=headers)
+        payload = {"Authorization": "Bearer refresh"}
+        res = await requests.post(url, data=payload, headers=headers)
         await interaction.respond("Update request sent.", ephemeral=True)
     
 
