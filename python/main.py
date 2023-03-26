@@ -1,6 +1,6 @@
 import discord
 import os
-import subprocess
+import requests
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -57,7 +57,10 @@ async def update_docker(interaction:discord.Interaction):
     if os.getenv("WATCHTOWER_TOKEN") == None:
         await interaction.respond("No watchtower token present.", ephemeral=True)
     else:
-        os.system(f'curl -H "Authorization: Bearer {os.getenv("WATCHTOWER_TOKEN")}" watchtower:8080/v1/update')
+        url     = 'watchtower:8080/v1/update'
+        payload = {}
+        headers = {f"Authorization: Bearer {os.getenv('WATCHTOWER_TOKEN')}"}
+        res = requests.post(url, data=payload, headers=headers)
         await interaction.respond("Update request sent.", ephemeral=True)
     
 

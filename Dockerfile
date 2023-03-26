@@ -1,7 +1,4 @@
-# We are targeting arm
-# TODO: figure out cross-platform compilation
-# Feel free to build yourself
-FROM arm64v8/python:3.10-slim
+FROM python:3.10
 WORKDIR /app
 
 # install requirements
