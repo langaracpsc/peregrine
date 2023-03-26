@@ -74,7 +74,7 @@ def validate_tokens():
         raise Exception("You need to pass in a discord bot token.")
     
     
-    if os.getenv("LIGHTHOUSE_TOKEN") == None:
+    if os.getenv("WATCHTOWER_TOKEN") == None:
         raise Exception("You need to pass in a lighthouse token.")
 
 
