@@ -163,3 +163,6 @@ settings.json
 
 # sqlite3
 *.sqlite 
+
+# github
+/github

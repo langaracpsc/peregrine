@@ -4,10 +4,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from RolePicker import RoleMenuButton
-from EmailManager import EmailManager
 
-guilds = [714354863349170187, 753037165050593300, 511924606651727895]
-bot = discord.Bot(owner_id=221780012372721664, debug_guilds=guilds)
+debug_guilds = [714354863349170187, 753037165050593300, 511924606651727895]
+bot = discord.Bot(owner_id=221780012372721664, debug_guilds=debug_guilds)
 
 # ROLE MENU        
 @bot.slash_command(description="Creates a role menu.")

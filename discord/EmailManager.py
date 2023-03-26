@@ -4,8 +4,7 @@ Collects an email address from user, checks its validity,
 then sends a confirmation email with code to that email.
 User then brings the code back and is given the email-verified role.
 
-Not currently used and I struggle to see how this will be useful,
-but it was fun to code :)
+Not currently in use.
 """
 
 import sqlite3
