@@ -1,5 +1,6 @@
 import discord
 import os
+import subprocess
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -49,6 +50,12 @@ async def execute(interaction:discord.Interaction, message):
         await interaction.respond(f"Executed `{message}`", ephemeral=True)
     except:
         await interaction.respond("Execution failed.", ephemeral=True)
+
+@bot.slash_command(description="Updates docker containers if an update exists")
+@discord.default_permissions(administrator=True)
+async def update_docker(interaction:discord.Interaction):
+    subprocess.call([f'curl -H "Authorization: Bearer {os.getenv("WATCHTOWER_TOKEN")}" localhost:8080/v1/update'])
+    await interaction.respond()
     
 
 @bot.event
@@ -60,8 +67,18 @@ async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
     print("------")
 
-if os.getenv("DISCORD_TOKEN") in [None, "", "your_discord_token_here"]:
-    raise Exception("You need to pass in a bot token.")
+
+def validate_tokens():
+        
+    if os.getenv("DISCORD_TOKEN") in [None, "", "your_discord_token_here"]:
+        raise Exception("You need to pass in a discord bot token.")
+    
+    
+    if os.getenv("LIGHTHOUSE_TOKEN") == None:
+        raise Exception("You need to pass in a lighthouse token.")
+
+
+validate_tokens()
 
 print("Running bot!")
 bot.run(os.getenv("DISCORD_TOKEN"))
