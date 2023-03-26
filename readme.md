@@ -6,7 +6,7 @@ To use this bot:
 - Download the bot files `git clone https://github.com/langaracpsc/peregrine.git`
 - create a virtual environment: `python -m venv venv` (you may have to use python3 or py instead of python)
 - enter the virtual environment: `venv/Scripts/activate` (`. venv/bin/activate` on linux)
-- install py-cord and dot-env: `pip install py-cord` `pip install python-dotenv`
+- install required libraries: `pip install -r requirements.txt`
 - place your token in a `.env` file: inside the file place `DISCORD_TOKEN="your_token_here"`
 - run `python main.py`
 
