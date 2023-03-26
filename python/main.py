@@ -59,8 +59,8 @@ async def update_docker(interaction:discord.Interaction):
     else:
         url     = 'http://watchtower:8080/v1/update'
         payload = {"Authorization": "Bearer refresh"}
-        res = await requests.post(url, data=payload)
-        await interaction.respond("Update request sent to the cloud." + str(res), ephemeral=True)
+        requests.post(url, data=payload)
+        await interaction.respond("Update request sent to the cloud.", ephemeral=True)
     
 
 @bot.event
