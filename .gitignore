@@ -165,4 +165,4 @@ settings.json
 *.sqlite 
 
 # github
-.github/workflows/
+.github/
