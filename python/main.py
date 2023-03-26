@@ -54,8 +54,11 @@ async def execute(interaction:discord.Interaction, message):
 @bot.slash_command(description="Updates docker containers if an update exists")
 @discord.default_permissions(administrator=True)
 async def update_docker(interaction:discord.Interaction):
-    os.system(f'curl -H "Authorization: Bearer {os.getenv("WATCHTOWER_TOKEN")}" localhost:8080/v1/update')
-    await interaction.respond()
+    if os.getenv("WATCHTOWER_TOKEN") == None:
+        await interaction.respond("No watchtower token present.", ephemeral=True)
+    else:
+        os.system(f'curl -H "Authorization: Bearer {os.getenv("WATCHTOWER_TOKEN")}" watchtower:8080/v1/update')
+        await interaction.respond("Update request sent.", ephemeral=True)
     
 
 @bot.event
@@ -74,8 +77,8 @@ def validate_tokens():
         raise Exception("You need to pass in a discord bot token.")
     
     
-    if os.getenv("WATCHTOWER_TOKEN") == None:
-        raise Exception("You need to pass in a watchtower token.")
+    #if os.getenv("WATCHTOWER_TOKEN") == None:
+    #    raise Exception("You need to pass in a watchtower token.")
 
 
 validate_tokens()
