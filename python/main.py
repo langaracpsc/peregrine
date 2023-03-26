@@ -60,5 +60,8 @@ async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
     print("------")
 
+if os.getenv("DISCORD_TOKEN") in [None, "", "your_discord_token_here"]:
+    raise Exception("You need to pass in a bot token.")
+
 print("Running bot!")
 bot.run(os.getenv("DISCORD_TOKEN"))
