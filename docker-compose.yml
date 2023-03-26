@@ -1,7 +1,0 @@
-version: "3.8"
-services:
-  discord:
-    build: discord/.
-    environment:
-      - DISCORD_TOKEN
-  # add volumes + mysql here if its ever needed
