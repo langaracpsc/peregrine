@@ -77,18 +77,5 @@ async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
     print("------")
 
-
-def validate_tokens():
-        
-    if os.getenv("DISCORD_TOKEN") in [None, "", "your_discord_token_here"]:
-        raise Exception("You need to pass in a discord bot token.")
-    
-    
-    #if os.getenv("WATCHTOWER_TOKEN") == None:
-    #    raise Exception("You need to pass in a watchtower token.")
-
-
-validate_tokens()
-
 print("Running bot!")
-bot.run(os.getenv("DISCORD_TOKEN"))
+bot.run(os.getenv("DISCORD_BOT_TOKEN"))
