@@ -54,12 +54,12 @@ async def execute(interaction:discord.Interaction, message):
 @bot.slash_command(description="Updates docker containers if an update exists")
 @discord.default_permissions(administrator=True)
 async def update_docker(interaction:discord.Interaction):
-    if os.getenv("WATCHTOWER_TOKEN") == None:
+    if os.getenv("WATCHTOWER_HTTP_API_TOKEN") == None:
         await interaction.respond("No watchtower token present.", ephemeral=True)
     else:
         try:
             url     = 'http://watchtower:8080/v1/update'
-            headers = {"Authorization": f"Bearer {os.getenv('WATCHTOWER_TOKEN')}"}
+            headers = {"Authorization": f"Bearer {os.getenv('WATCHTOWER_HTTP_API_TOKEN')}"}
             # go in this order so that the message actually makes it to discord
             requests.post(url)
             await interaction.respond("Update request sent to the cloud.")
