@@ -1,18 +1,27 @@
-Welcome to the discord repository of peregrine (version 2.0)!
+# Peregrine (version 2.0)
+Welcome to the repository of our discord bot, peregrine! (version 2.0)
 
 <br/>
 
-(Almost all functionality in this bot is hardcoded to roles in the langara computer science club discord. Fork the bot if you want to use it in another server!)
+Features:
+ - Custom role menu
+ - Custom role button
+ - More functionality coming soon™️
+
+<br/>
+
+Note that pushing to main will automatically update the live discord bot. (If anyone knows how to do this properly with cogs instead of the current messy system PLEASE LMK)
+
+Come chat in #club-projects on our discord server if you have any questions or comments!
 
 <br/>
 <br/>
-
-Contact Highfire1#1942 if you have questions about the bot!
-
-More functionality coming soon™️
-
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+
 
 You can run this bot manually with `main.py`, but we highly reccomend you use Docker!
 
