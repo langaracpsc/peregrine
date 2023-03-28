@@ -1,4 +1,4 @@
-name: ci
+name: Build
 
 on:
   push:
@@ -39,5 +39,5 @@ jobs:
         with:
           url: ${{secrets.WATCHTOWER_URL}}
           method: 'POST'
-          customHeaders: '{"Authorization": "Bearer ${{WATCHTOWER_HTTP_API_TOKEN}}" }'
+          customHeaders: '{"Authorization": "Bearer ${{secrets.WATCHTOWER_HTTP_API_TOKEN}}" }'
           data: '{"key_1": "value_1", "key_2": "value_2"}'
