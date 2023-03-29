@@ -1,13 +1,13 @@
 import discord
 import os
+import sys
 import requests
 from dotenv import load_dotenv
 load_dotenv()
 
 from RolePicker import RoleMenuButton
 
-debug_guilds = [714354863349170187, 753037165050593300, 511924606651727895]
-bot = discord.Bot(owner_id=221780012372721664, debug_guilds=debug_guilds)
+bot = discord.Bot(owner_id=221780012372721664)
 
 # ROLE MENU        
 @bot.slash_command(description="Creates a role menu.")
@@ -66,7 +66,7 @@ async def update_docker(interaction:discord.Interaction):
             await requests.post(url, headers=headers)
         except Exception as e:
             await interaction.respond("Could not establish a connection: " + str(e))
-        
+
 
 @bot.event
 async def on_ready():
@@ -76,6 +76,39 @@ async def on_ready():
 
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
     print("------")
+    
 
-print("Running bot!")
-bot.run(os.getenv("DISCORD_BOT_TOKEN"))
+args = sys.argv
+environment = None
+
+# If "prod" or "dev" are passed as arguments, load dev or prod
+# if no argument is provided, check for watchtower token, if present launch in prod, if not, launch in dev
+if len(args) > 2:
+    raise ValueError('Too many arguments! Enter either "dev", "prod", or nothing!')  
+
+elif len(args) == 1:
+    if os.getenv("WATCHTOWER_HTTP_API_TOKEN") == None:
+        environment = "dev"
+    else:
+        environment = "prod"
+  
+elif len(args) == 2 and args[1] == "-h":
+    print("Read the README: https://github.com/langaracpsc/peregrine")
+    sys.exit(1)
+
+elif args[1] == "dev":
+    environment = "dev"
+
+elif args[1] == "prod":
+    environment = "prod"
+
+else:
+    raise ValueError(f'Unknown argument "{args[1]}".')
+
+if environment == "dev":
+    print("Starting the bot in development mode...")
+    bot.run(os.getenv("DISCORD_BOT_TOKEN_DEV"))
+    
+elif environment == "prod":
+    print("Starting the bot in production mode...")
+    bot.run(os.getenv("DISCORD_BOT_TOKEN"))

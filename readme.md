@@ -23,16 +23,11 @@ Come chat in #club-projects on our discord server if you have any questions or c
 <br/>
 
 
-You can run this bot manually with `main.py`, but we highly reccomend you use Docker!
+This project is setup to be run with Docker on our cloud [server](https://github.com/langaracpsc/server/tree/main), but you can also run it by itself for testing/development.
 
-This bot is designed to run with our server setup at [https://github.com/langaracpsc/server/tree/main](https://github.com/langaracpsc/server/tree/main) but it is also possible to run the image alone (not reccomended):
-
-- Download [Docker](https://www.docker.com/)
-- Obtain a discord [bot token](https://docs.pycord.dev/en/stable/discord.html)
-- Pull the image for peregrine with `docker pull ghcr.io/langaracpsc/peregrine:main`
-- Run the image with `docker run -e DISCORD_TOKEN=your_discord_token_here -d --name peregrine ghcr.io/langaracpsc/peregrine:main`
-    - -e passes in the discord token
-    - -d runs the container in background
-    - --name sets name of container
-- run `docker logs peregrine` to check that the bot launched correctly.
-- run `docker stop peregrine` and `docker rm peregrine` to stop and clear the container.
+- `git pull` to clone this project
+- `cd peregrine2` to enter the directory
+- `python -m venv venv` to create a virtual environment
+- download the required libraries `python -m pip install -r requirements.txt`
+- populate `.env`
+- run with `python python/main.py`

@@ -9,6 +9,5 @@ RUN pip3 install -r requirements.txt
 COPY . .
 
 # run code
-# -u required for output see https://stackoverflow.com/a/24183941/15456176
-CMD ["python3", "-u", "python/main.py"]
+CMD ["python3", "python/main.py"]
 
