@@ -12,6 +12,7 @@ class Role():
             value=self.id, 
             emoji=self.emoji
         )
+
 class RoleMenuButton(discord.ui.View): 
     def __init__(self):
         super().__init__(timeout=None)
