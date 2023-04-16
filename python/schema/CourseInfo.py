@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 from enum import Enum
+import datetime
 
 from schema.Semester import Course, RPEnum
 from schema.Transfer import Transfer
@@ -90,6 +91,10 @@ class CourseInfo(BaseModel):
         }
 
 class CourseInfoAll(BaseModel):
+    datetime_retrieved: str = Field(
+        default=datetime.now().strftime("%Y-%m-%d %H:%M:%S"), #iso standards aren't real
+        description='Date data was retrieved.'
+        )
     courses: list[CourseInfo]    
     
     def __init__(__pydantic_self__, **data: any) -> None:
