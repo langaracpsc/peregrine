@@ -1,5 +1,5 @@
 {
-    "datetime_retrieved": "2023-04-06 05:21:58",
+    "datetime_retrieved": "2023-04-16 02:27:18",
     "year": 2010,
     "semester": 20,
     "courses_first_day": "2010-5-10",
@@ -37,7 +37,8 @@
                     "room": "B153",
                     "instructor": "Stanley Copp"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -71,7 +72,8 @@
                     "room": "B147",
                     "instructor": "Stanley Copp"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -96,7 +98,8 @@
                     "room": " ",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -121,7 +124,8 @@
                     "room": " ",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -146,7 +150,8 @@
                     "room": " ",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -171,7 +176,8 @@
                     "room": " ",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -205,7 +211,8 @@
                     "room": "B018",
                     "instructor": "Stanley Copp"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -230,7 +237,8 @@
                     "room": "OFFC",
                     "instructor": "Bruce Hanbury, Anne Kristiansen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -255,7 +263,8 @@
                     "room": "B018",
                     "instructor": "Denise Panchysyn"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -280,7 +289,8 @@
                     "room": "B018",
                     "instructor": "Denise Panchysyn"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -314,7 +324,8 @@
                     "room": "B018",
                     "instructor": "Denise Panchysyn"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -339,7 +350,8 @@
                     "room": " ",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -391,7 +403,8 @@
                     "room": "A130",
                     "instructor": "Catherine Glass"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -443,7 +456,8 @@
                     "room": "A130",
                     "instructor": "Catherine Glass"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -486,7 +500,8 @@
                     "room": "A130",
                     "instructor": "Catherine Glass"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -529,7 +544,8 @@
                     "room": "A122B",
                     "instructor": "Kimberly Hruska"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -572,7 +588,8 @@
                     "room": "A122B",
                     "instructor": "Kimberly Hruska"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -615,7 +632,8 @@
                     "room": "A320",
                     "instructor": "Paul Sunga"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -658,7 +676,8 @@
                     "room": "A320",
                     "instructor": "Kimberly Hruska"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -710,7 +729,8 @@
                     "room": "A122B",
                     "instructor": "Stephen Connor"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -762,7 +782,8 @@
                     "room": "A122B",
                     "instructor": "Stephen Connor"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -805,7 +826,8 @@
                     "room": "A122A",
                     "instructor": "Cam MacDonald"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -848,7 +870,8 @@
                     "room": "A122A",
                     "instructor": "Cam MacDonald"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -882,7 +905,8 @@
                     "room": "A321",
                     "instructor": "Paul Sunga"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -916,7 +940,8 @@
                     "room": "A322",
                     "instructor": "Timothy Higgs"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -959,7 +984,8 @@
                     "room": "A333",
                     "instructor": "Kimberly Hruska"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -1002,7 +1028,8 @@
                     "room": "A315",
                     "instructor": "Catherine Glass"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1036,7 +1063,8 @@
                     "room": "L103",
                     "instructor": "Phil Mentacos"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1061,7 +1089,8 @@
                     "room": "L103",
                     "instructor": "Phil Mentacos"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1095,7 +1124,8 @@
                     "room": "B246",
                     "instructor": "Ron Velin"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1129,7 +1159,8 @@
                     "room": "B246",
                     "instructor": "Stephane Guerraz"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1163,7 +1194,8 @@
                     "room": "WWW",
                     "instructor": "Francesca Deveau"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1188,7 +1220,8 @@
                     "room": "WWW",
                     "instructor": "Stephane Guerraz"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1222,7 +1255,8 @@
                     "room": "B246",
                     "instructor": "Ron Velin"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1256,7 +1290,8 @@
                     "room": "B253",
                     "instructor": "Paul LeDressay"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1299,7 +1334,8 @@
                     "room": "A310",
                     "instructor": "Paul LeDressay"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1324,7 +1360,8 @@
                     "room": "B245",
                     "instructor": "Antonella Alves"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1349,7 +1386,8 @@
                     "room": "B245",
                     "instructor": "Antonella Alves"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1383,7 +1421,8 @@
                     "room": "B253",
                     "instructor": "Noel Genoway"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1417,7 +1456,8 @@
                     "room": "WWW",
                     "instructor": "Noel Genoway"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1451,7 +1491,8 @@
                     "room": "A122B",
                     "instructor": "Noel Genoway"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1485,7 +1526,8 @@
                     "room": "A122A",
                     "instructor": "Linda Alexander"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1519,7 +1561,8 @@
                     "room": "A122A",
                     "instructor": "Linda Alexander"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1553,7 +1596,8 @@
                     "room": "A122B",
                     "instructor": "Noel Genoway"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1578,7 +1622,8 @@
                     "room": "B252",
                     "instructor": "Ron Velin"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1612,7 +1657,8 @@
                     "room": "B252",
                     "instructor": "Linda Alexander"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -1646,7 +1692,8 @@
                     "room": "WWW",
                     "instructor": "Marianne Gianacopoulos"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -1680,7 +1727,8 @@
                     "room": "WWW",
                     "instructor": "Phaedra Burke"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -1705,7 +1753,8 @@
                     "room": "OFFC",
                     "instructor": "Kevin Rolston"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -1730,7 +1779,8 @@
                     "room": "NIL",
                     "instructor": "Kevin Rolston"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -1764,7 +1814,8 @@
                     "room": "B254",
                     "instructor": "Caroline Dickson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -1798,7 +1849,8 @@
                     "room": "B252",
                     "instructor": "Kevin James"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -1823,7 +1875,8 @@
                     "room": "NIL",
                     "instructor": "Peter Norwood, Donald Hill"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1875,7 +1928,8 @@
                     "room": "A266",
                     "instructor": "Yanguo Yang"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -1909,7 +1963,8 @@
                     "room": " ",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -1952,7 +2007,8 @@
                     "room": "A266",
                     "instructor": "James Rolke"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2004,7 +2060,8 @@
                     "room": "A346",
                     "instructor": "Timothy Higgs"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2056,7 +2113,8 @@
                     "room": "A347",
                     "instructor": "Paul Sunga"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2108,7 +2166,8 @@
                     "room": "A266",
                     "instructor": "James Rolke"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2160,7 +2219,8 @@
                     "room": "A310",
                     "instructor": "James Rolke"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2203,7 +2263,8 @@
                     "room": "A266",
                     "instructor": "Paulo Sgarbi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2246,7 +2307,8 @@
                     "room": "A266",
                     "instructor": "Paulo Sgarbi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -2271,7 +2333,8 @@
                     "room": "A320",
                     "instructor": "Wei Xia"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2296,7 +2359,8 @@
                     "room": "OFFC",
                     "instructor": "Gayleen Wren, Kevin Rolston, Marianne Gianacopoulos"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2321,7 +2385,8 @@
                     "room": "OFFC",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2346,7 +2411,8 @@
                     "room": "OFFC",
                     "instructor": "Gayleen Wren, Heather Workman, Kevin Rolston"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2371,7 +2437,8 @@
                     "room": "OFFC",
                     "instructor": "Phaedra Burke, Gayleen Wren, Kevin Rolston, Marianne Gianacopoulos"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2396,7 +2463,8 @@
                     "room": "OFFC",
                     "instructor": "Gayleen Wren, Kevin Rolston, Marianne Gianacopoulos"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2421,7 +2489,8 @@
                     "room": "OFFC",
                     "instructor": "Gayleen Wren, Kevin Rolston, Marianne Gianacopoulos"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2446,7 +2515,8 @@
                     "room": "A322",
                     "instructor": "Erin Robb"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2471,7 +2541,8 @@
                     "room": "A307",
                     "instructor": "Simon Casey"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2505,7 +2576,8 @@
                     "room": "WWW",
                     "instructor": "Cheryl Nobles"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2539,7 +2611,8 @@
                     "room": "WWW",
                     "instructor": "Jill Goldberg"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2573,7 +2646,8 @@
                     "room": "WWW",
                     "instructor": "Cheryl Nobles"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2616,7 +2690,8 @@
                     "room": "A136A",
                     "instructor": "Erin Robb"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2659,7 +2734,8 @@
                     "room": "A136A",
                     "instructor": "Erin Robb"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -2702,7 +2778,8 @@
                     "room": "A217",
                     "instructor": "Mingwu Chen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -2736,7 +2813,8 @@
                     "room": " ",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -2779,7 +2857,8 @@
                     "room": "A122A",
                     "instructor": "Brian Koehler"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -2822,7 +2901,8 @@
                     "room": "A122A",
                     "instructor": "Brian Koehler"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -2865,7 +2945,8 @@
                     "room": "B018",
                     "instructor": "Bijan Farrahi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -2908,7 +2989,8 @@
                     "room": "B149",
                     "instructor": "Brian Koehler"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -2951,7 +3033,8 @@
                     "room": "B152",
                     "instructor": "Mingwu Chen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -2985,7 +3068,8 @@
                     "room": "A351",
                     "instructor": "Hossein Darbandi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3028,7 +3112,8 @@
                     "room": "A122A",
                     "instructor": "Hossein Darbandi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3080,7 +3165,8 @@
                     "room": "A122A",
                     "instructor": "Hossein Darbandi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3123,7 +3209,8 @@
                     "room": "B147",
                     "instructor": "Bijan Farrahi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3166,7 +3253,8 @@
                     "room": "B147",
                     "instructor": "Bijan Farrahi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3209,7 +3297,8 @@
                     "room": "B155",
                     "instructor": "Hengameh Hamavand"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3252,7 +3341,8 @@
                     "room": "B154",
                     "instructor": "Hengameh Hamavand"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3304,7 +3394,8 @@
                     "room": "B154",
                     "instructor": "Ardeshir Bagheri"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -3347,7 +3438,8 @@
                     "room": "A219",
                     "instructor": "Roy Sinn"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3399,7 +3491,8 @@
                     "room": "B245",
                     "instructor": "Ardeshir Bagheri"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -3433,7 +3526,8 @@
                     "room": "WWW",
                     "instructor": "Fred Parvaz"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3467,7 +3561,8 @@
                     "room": "WWW",
                     "instructor": "Fred Parvaz"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -3501,7 +3596,8 @@
                     "room": "WWW",
                     "instructor": "Fred Parvaz"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3535,7 +3631,8 @@
                     "room": "A348",
                     "instructor": "Claude Painter"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3569,7 +3666,8 @@
                     "room": "A348",
                     "instructor": "Joanne Brown"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3603,7 +3701,8 @@
                     "room": "A348",
                     "instructor": "Merle Viaud"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3646,7 +3745,8 @@
                     "room": "A348",
                     "instructor": "Joanne Brown"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3689,7 +3789,8 @@
                     "room": "A328",
                     "instructor": "Carol Turner"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3732,7 +3833,8 @@
                     "room": "A348",
                     "instructor": "Claude Painter"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3757,7 +3859,8 @@
                     "room": "OFFC",
                     "instructor": "Claude Painter, Andrea Dawson, Carol Turner, Joanne Brown, Merle Viaud"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3791,7 +3894,8 @@
                     "room": "A283",
                     "instructor": "Carol Turner"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3825,7 +3929,8 @@
                     "room": "A283",
                     "instructor": "Joanne Brown"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3868,7 +3973,8 @@
                     "room": "A283",
                     "instructor": "Merle Viaud"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3911,7 +4017,8 @@
                     "room": "A283",
                     "instructor": "Andrea Dawson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3936,7 +4043,8 @@
                     "room": "OFFC",
                     "instructor": "Claude Painter, Andrea Dawson, Carol Turner, Joanne Brown, Merle Viaud"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -3979,7 +4087,8 @@
                     "room": "A348",
                     "instructor": "Carol Turner"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -4004,7 +4113,8 @@
                     "room": "OFFC",
                     "instructor": "Carol Turner, Claude Painter, Joanne Brown, Merle Viaud"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -4029,7 +4139,8 @@
                     "room": "OFFC",
                     "instructor": "Claude Painter, Andrea Dawson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -4063,7 +4174,8 @@
                     "room": "B153",
                     "instructor": "Fulton Tom"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -4097,7 +4209,8 @@
                     "room": "A130",
                     "instructor": "Fulton Tom"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -4140,7 +4253,8 @@
                     "room": "A136B",
                     "instructor": "Kamran Izadpanah, Warren Giovannetti"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -4174,7 +4288,8 @@
                     "room": "A136A",
                     "instructor": "Kamran Izadpanah"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -4208,7 +4323,8 @@
                     "room": "A136B",
                     "instructor": "Warren Giovannetti"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -4242,7 +4358,8 @@
                     "room": "A130",
                     "instructor": "Lanny Zrill"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4267,7 +4384,8 @@
                     "room": "A122B",
                     "instructor": "Scott McLean"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4292,7 +4410,8 @@
                     "room": "A122B",
                     "instructor": "Scott McLean"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4326,7 +4445,8 @@
                     "room": "A334",
                     "instructor": "Cheryl Nobles"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4360,7 +4480,8 @@
                     "room": "A122B",
                     "instructor": "Camilla Pickard"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4394,7 +4515,8 @@
                     "room": "A310",
                     "instructor": "Heather Burt"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4428,7 +4550,8 @@
                     "room": "A334",
                     "instructor": "Cheryl Nobles"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4462,7 +4585,8 @@
                     "room": "A310",
                     "instructor": "Heather Burt"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4496,7 +4620,8 @@
                     "room": "A229",
                     "instructor": "Anne Moriarty"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4530,7 +4655,8 @@
                     "room": "A321",
                     "instructor": "Susan Font"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4564,7 +4690,8 @@
                     "room": "A321",
                     "instructor": "Susan Font"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4598,7 +4725,8 @@
                     "room": "A229",
                     "instructor": "Anne Moriarty"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4623,7 +4751,8 @@
                     "room": "A306",
                     "instructor": "Gregory Holditch"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4648,7 +4777,8 @@
                     "room": "A229",
                     "instructor": "Gregory Holditch"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4673,7 +4803,8 @@
                     "room": "B247",
                     "instructor": "Ameena Mayer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4707,7 +4838,8 @@
                     "room": "A130",
                     "instructor": "Gregory Holditch"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4741,7 +4873,8 @@
                     "room": "A122A",
                     "instructor": "Peter Babiak"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4775,7 +4908,8 @@
                     "room": "A327",
                     "instructor": "Trevor Newland"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4809,7 +4943,8 @@
                     "room": "A322",
                     "instructor": "Wayne Henry"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4843,7 +4978,8 @@
                     "room": "A130",
                     "instructor": "Gregory Holditch"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4877,7 +5013,8 @@
                     "room": "A130",
                     "instructor": "Kurt Preinsperg"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4911,7 +5048,8 @@
                     "room": "A130",
                     "instructor": "Kurt Preinsperg"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4945,7 +5083,8 @@
                     "room": "B154",
                     "instructor": "Ameena Mayer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -4979,7 +5118,8 @@
                     "room": "A328",
                     "instructor": "Simon Casey"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5013,7 +5153,8 @@
                     "room": "A327",
                     "instructor": "Paul Headrick"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5047,7 +5188,8 @@
                     "room": "A122B",
                     "instructor": "Camilla Pickard"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5072,7 +5214,8 @@
                     "room": "A307",
                     "instructor": "Anne Moriarty"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5097,7 +5240,8 @@
                     "room": "A308",
                     "instructor": "Camilla Pickard"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5131,7 +5275,8 @@
                     "room": "A320",
                     "instructor": "Noel Currie"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5165,7 +5310,8 @@
                     "room": "B152",
                     "instructor": "Cheratra Yaswen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5199,7 +5345,8 @@
                     "room": "B147",
                     "instructor": "Merrianne Couture"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5233,7 +5380,8 @@
                     "room": "A333",
                     "instructor": "Paul Headrick"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5267,7 +5415,8 @@
                     "room": "A327",
                     "instructor": "Heather Burt"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5310,7 +5459,8 @@
                     "room": "A266",
                     "instructor": "Jill Goldberg"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5344,7 +5494,8 @@
                     "room": "A315",
                     "instructor": "Erin Robb"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5369,7 +5520,8 @@
                     "room": " ",
                     "instructor": " "
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5403,7 +5555,8 @@
                     "room": "A327",
                     "instructor": "Simon Casey"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5437,7 +5590,8 @@
                     "room": "B251",
                     "instructor": "Ameena Mayer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5471,7 +5625,8 @@
                     "room": "A229",
                     "instructor": "Anne Moriarty"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5505,7 +5660,8 @@
                     "room": "B149",
                     "instructor": "Deborah Blacklock"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5539,7 +5695,8 @@
                     "room": "A136B",
                     "instructor": "Anton Chernoff"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5573,7 +5730,8 @@
                     "room": "A122A",
                     "instructor": "Peter Babiak"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5607,7 +5765,8 @@
                     "room": "A122A",
                     "instructor": "Peter Babiak"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5641,7 +5800,8 @@
                     "room": "A136B",
                     "instructor": "Anton Chernoff"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5675,7 +5835,8 @@
                     "room": "B154",
                     "instructor": "Ameena Mayer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -5709,7 +5870,8 @@
                     "room": "A229",
                     "instructor": "Joanne Horwood"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5734,7 +5896,8 @@
                     "room": "A327",
                     "instructor": "Paul Headrick"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5768,7 +5931,8 @@
                     "room": "A327",
                     "instructor": "Noel Currie"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5802,7 +5966,8 @@
                     "room": "A327",
                     "instructor": "Peter Babiak"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5836,7 +6001,8 @@
                     "room": "B148",
                     "instructor": "Paul Headrick"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5861,7 +6027,8 @@
                     "room": "A328",
                     "instructor": "Trevor Newland"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5895,7 +6062,8 @@
                     "room": "A347",
                     "instructor": "Deborah Blacklock"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -5920,7 +6088,8 @@
                     "room": "A321",
                     "instructor": "Trevor Newland"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -5945,7 +6114,8 @@
                     "room": "A025",
                     "instructor": "Garwin Sanford"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -5970,7 +6140,8 @@
                     "room": "A077",
                     "instructor": "Garwin Sanford"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -5995,7 +6166,8 @@
                     "room": "A025",
                     "instructor": "Hazel Chadwick"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -6020,7 +6192,8 @@
                     "room": "A348",
                     "instructor": "Gary Fisher"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -6045,7 +6218,8 @@
                     "room": "A346",
                     "instructor": "Gary Fisher"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -6079,7 +6253,8 @@
                     "room": "A256",
                     "instructor": "Byron Lamarque"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -6104,7 +6279,8 @@
                     "room": "A256",
                     "instructor": "Jonas Quastel"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -6129,7 +6305,8 @@
                     "room": "A256",
                     "instructor": "Garwin Sanford"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -6172,7 +6349,8 @@
                     "room": "A346",
                     "instructor": "Garwin Sanford, Jonas Quastel"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -6215,7 +6393,8 @@
                     "room": "A346",
                     "instructor": "Garwin Sanford, Jonas Quastel"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -6258,7 +6437,8 @@
                     "room": "A346",
                     "instructor": "Garwin Sanford, Jonas Quastel"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -6292,7 +6472,8 @@
                     "room": "B254",
                     "instructor": "Ruth Heathcote"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -6326,7 +6507,8 @@
                     "room": "B253",
                     "instructor": "Antonella Alves"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -6360,7 +6542,8 @@
                     "room": "B246",
                     "instructor": "Ellen Hamer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -6394,7 +6577,8 @@
                     "room": "B246",
                     "instructor": "Sze-Ching Yip"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -6428,7 +6612,8 @@
                     "room": "WWW",
                     "instructor": "Sze-Ching Yip"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6462,7 +6647,8 @@
                     "room": "B246",
                     "instructor": "Sze-Ching Yip"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6496,7 +6682,8 @@
                     "room": "B155",
                     "instructor": "Paul Jeyakumar"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6530,7 +6717,8 @@
                     "room": "B246",
                     "instructor": "Ellen Hamer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6564,7 +6752,8 @@
                     "room": "B152",
                     "instructor": "Ellen Hamer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6598,7 +6787,8 @@
                     "room": "B153",
                     "instructor": "Paul Jeyakumar"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6632,7 +6822,8 @@
                     "room": "B246",
                     "instructor": "Ruth Heathcote"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6657,7 +6848,8 @@
                     "room": "B252",
                     "instructor": "Ruth Heathcote"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6700,7 +6892,8 @@
                     "room": "B246",
                     "instructor": "Peter Norwood"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6734,7 +6927,8 @@
                     "room": "B153",
                     "instructor": "Akash Rattan"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6768,7 +6962,8 @@
                     "room": "B147",
                     "instructor": "Ruth Heathcote"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6802,7 +6997,8 @@
                     "room": "B253",
                     "instructor": "Paul Jeyakumar"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6836,7 +7032,8 @@
                     "room": "B254",
                     "instructor": "Ellen Hamer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6870,7 +7067,8 @@
                     "room": "B154",
                     "instructor": "Sze-Ching Yip"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6904,7 +7102,8 @@
                     "room": "B147",
                     "instructor": "Shiraz Charania"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6938,7 +7137,8 @@
                     "room": "B148",
                     "instructor": "Sze-Ching Yip"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -6981,7 +7181,8 @@
                     "room": "B149",
                     "instructor": "Peter Norwood"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7006,7 +7207,8 @@
                     "room": "A044",
                     "instructor": "Milos Campbell"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7031,7 +7233,8 @@
                     "room": "A044",
                     "instructor": "Milos Campbell"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7056,7 +7259,8 @@
                     "room": "A046",
                     "instructor": "Susan Webster Benwick"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7090,7 +7294,8 @@
                     "room": "A006",
                     "instructor": "Sarah Coote"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7124,7 +7329,8 @@
                     "room": "A334",
                     "instructor": "Diane Bradley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7158,7 +7364,8 @@
                     "room": "A338",
                     "instructor": "Diane Bradley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7192,7 +7399,8 @@
                     "room": "A339",
                     "instructor": "Diane Bradley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7226,7 +7434,8 @@
                     "room": "A339",
                     "instructor": "Trevor Newland"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7260,7 +7469,8 @@
                     "room": "A338",
                     "instructor": "Diane Bradley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7294,7 +7504,8 @@
                     "room": "A339",
                     "instructor": "Diane Bradley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7328,7 +7539,8 @@
                     "room": "A122A",
                     "instructor": "Rory Crowley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7362,7 +7574,8 @@
                     "room": "A229",
                     "instructor": "Andrew Egan"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7414,7 +7627,8 @@
                     "room": "A122A",
                     "instructor": "Andrew Egan"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7466,7 +7680,8 @@
                     "room": "A122A",
                     "instructor": "Andrew Egan"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7518,7 +7733,8 @@
                     "room": "A122A",
                     "instructor": "Rory Crowley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7570,7 +7786,8 @@
                     "room": "A122A",
                     "instructor": "Rory Crowley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -7595,7 +7812,8 @@
                     "room": "NIL",
                     "instructor": "Gwyneth Lewis"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7629,7 +7847,8 @@
                     "room": "A266",
                     "instructor": "Catherine Glass"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7663,7 +7882,8 @@
                     "room": "B147",
                     "instructor": "Raoul Grossman"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7697,7 +7917,8 @@
                     "room": "B147",
                     "instructor": "Raoul Grossman"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7731,7 +7952,8 @@
                     "room": "B147",
                     "instructor": "Raoul Grossman"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7756,7 +7978,8 @@
                     "room": "A122A",
                     "instructor": "Andrea Smith"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7790,7 +8013,8 @@
                     "room": "B147",
                     "instructor": "Raoul Grossman"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7824,7 +8048,8 @@
                     "room": "B154",
                     "instructor": "Kathleen Emerson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7858,7 +8083,8 @@
                     "room": "A122B",
                     "instructor": "Harry Lendvoy"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7892,7 +8118,8 @@
                     "room": "A122B",
                     "instructor": "Harry Lendvoy"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7926,7 +8153,8 @@
                     "room": "A315",
                     "instructor": "Brent Day"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -7969,7 +8197,8 @@
                     "room": "G109",
                     "instructor": "Kathleen Emerson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8012,7 +8241,8 @@
                     "room": "A122A",
                     "instructor": "Carmen Bott"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8055,7 +8285,8 @@
                     "room": "A122A",
                     "instructor": "Carmen Bott"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8089,7 +8320,8 @@
                     "room": "A266",
                     "instructor": "Kathleen Emerson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8132,7 +8364,8 @@
                     "room": "A122A",
                     "instructor": "Ryan Cawsey"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8175,7 +8408,8 @@
                     "room": "A122A",
                     "instructor": "Ryan Cawsey"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8200,7 +8434,8 @@
                     "room": "G103",
                     "instructor": "Kathleen Emerson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -8234,7 +8469,8 @@
                     "room": "A219",
                     "instructor": "Kathleen Emerson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -8268,7 +8504,8 @@
                     "room": "A346",
                     "instructor": "Ajay Patel"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8302,7 +8539,8 @@
                     "room": "A266",
                     "instructor": "Ryan Cawsey"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8336,7 +8574,8 @@
                     "room": "A266",
                     "instructor": "Ryan Cawsey"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8361,7 +8600,8 @@
                     "room": "G103",
                     "instructor": "Harry Lendvoy"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -8395,7 +8635,8 @@
                     "room": "G109",
                     "instructor": "Ryan Cawsey"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8429,7 +8670,8 @@
                     "room": "A266",
                     "instructor": "Jamshid Shahidi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8463,7 +8705,8 @@
                     "room": "A315",
                     "instructor": "Ginette Dube"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -8488,7 +8731,8 @@
                     "room": "NIL",
                     "instructor": "Carol Elder"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -8513,7 +8757,8 @@
                     "room": "WWW",
                     "instructor": "Michelle Mallette"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "R",
@@ -8538,7 +8783,8 @@
                     "room": "WWW",
                     "instructor": "Michelle Mallette"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8572,7 +8818,8 @@
                     "room": "B152",
                     "instructor": "Ronald Shay"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8606,7 +8853,8 @@
                     "room": "B153",
                     "instructor": "Kevin James"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8640,7 +8888,8 @@
                     "room": "A130",
                     "instructor": "Ronald Shay"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8674,7 +8923,8 @@
                     "room": "A130",
                     "instructor": "Ronald Shay"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8699,7 +8949,8 @@
                     "room": "B253",
                     "instructor": "Kevin James"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8724,7 +8975,8 @@
                     "room": "B254",
                     "instructor": "Donald Hill"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8758,7 +9010,8 @@
                     "room": "WWW",
                     "instructor": "Sandra Biggerstaff"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8792,7 +9045,8 @@
                     "room": "B153",
                     "instructor": "Douglas White"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8817,7 +9071,8 @@
                     "room": "WWW",
                     "instructor": "Stephanie Koonar"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -8851,7 +9106,8 @@
                     "room": "B148",
                     "instructor": "Sandra Biggerstaff"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -8876,7 +9132,8 @@
                     "room": "B252",
                     "instructor": "Donald Hill"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -8901,7 +9158,8 @@
                     "room": "B018",
                     "instructor": "Rebecca Friesen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -8935,7 +9193,8 @@
                     "room": "B018",
                     "instructor": "Rebecca Friesen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -8969,7 +9228,8 @@
                     "room": "B018",
                     "instructor": "Ken Collins"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9003,7 +9263,8 @@
                     "room": "B251",
                     "instructor": "Rebecca Friesen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9037,7 +9298,8 @@
                     "room": "B152",
                     "instructor": "Rebecca Friesen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9071,7 +9333,8 @@
                     "room": "B153",
                     "instructor": "Jae-Hyung Jang"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9105,7 +9368,8 @@
                     "room": "B018",
                     "instructor": "Peter Danenhower"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9139,7 +9403,8 @@
                     "room": "B018",
                     "instructor": "Emmanuel Darkoh"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9173,7 +9438,8 @@
                     "room": "B153",
                     "instructor": "Pichmony Anhaouy"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9207,7 +9473,8 @@
                     "room": "B018",
                     "instructor": "Pichmony Anhaouy"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9241,7 +9508,8 @@
                     "room": "B155",
                     "instructor": "Edgar Avelino"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9275,7 +9543,8 @@
                     "room": "B015",
                     "instructor": "Edgar Avelino"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9318,7 +9587,8 @@
                     "room": "B152",
                     "instructor": "Emmanuel Darkoh"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9352,7 +9622,8 @@
                     "room": "B153",
                     "instructor": "Michael Lo"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9386,7 +9657,8 @@
                     "room": "B018",
                     "instructor": "Pichmony Anhaouy"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -9411,7 +9683,8 @@
                     "room": "B015",
                     "instructor": "Edgar Avelino"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9445,7 +9718,8 @@
                     "room": "B148",
                     "instructor": "Rebecca Friesen"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9479,7 +9753,8 @@
                     "room": "B018",
                     "instructor": "Peter Danenhower"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9513,7 +9788,8 @@
                     "room": "B251",
                     "instructor": "Peter Danenhower"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9547,7 +9823,8 @@
                     "room": "B018",
                     "instructor": "Pichmony Anhaouy"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9581,7 +9858,8 @@
                     "room": "B018",
                     "instructor": "Ken Collins"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9606,7 +9884,8 @@
                     "room": "A136A",
                     "instructor": "Ken Collins"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9640,7 +9919,8 @@
                     "room": "B015",
                     "instructor": "Jae-Hyung Jang"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9674,7 +9954,8 @@
                     "room": "B251",
                     "instructor": "Edgar Avelino"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -9699,7 +9980,8 @@
                     "room": "B015",
                     "instructor": "Jae-Hyung Jang"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -9733,7 +10015,8 @@
                     "room": "WWW",
                     "instructor": "Kim Soltysik"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -9767,7 +10050,8 @@
                     "room": "WWW",
                     "instructor": "J. Giselle Rogers"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -9801,7 +10085,8 @@
                     "room": "WWW",
                     "instructor": "J. Giselle Rogers"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -9844,7 +10129,8 @@
                     "room": "A130",
                     "instructor": "Tina Johnston"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -9887,7 +10173,8 @@
                     "room": "A130",
                     "instructor": "Tina Johnston"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -9948,7 +10235,8 @@
                     "room": "C508",
                     "instructor": "Melanie Forseng"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10009,7 +10297,8 @@
                     "room": "A346",
                     "instructor": "Karima Kassam"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10052,7 +10341,8 @@
                     "room": "A314",
                     "instructor": "Sharon Stunder"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10095,7 +10385,8 @@
                     "room": "A229",
                     "instructor": "Yujin Lim"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10147,7 +10438,8 @@
                     "room": "A314",
                     "instructor": "Laura Cottrell"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10199,7 +10491,8 @@
                     "room": "A346",
                     "instructor": "Lucille Aunger"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10224,7 +10517,8 @@
                     "room": "OFFC",
                     "instructor": "Alison Currie, Douglas Yochim, Haleh Amini, Monica Chan, Rjinder Atwal"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10249,7 +10543,8 @@
                     "room": "OFFC",
                     "instructor": "Alice Endrizzi, Cathie Chin, Peterson Masigan, Priscilla Taipale"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10283,7 +10578,8 @@
                     "room": "WWW",
                     "instructor": "Laurisa Tong"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10326,7 +10622,8 @@
                     "room": "B248",
                     "instructor": "Siwon Kim"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10369,7 +10666,8 @@
                     "room": "A346",
                     "instructor": "Sandeep Atwal"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10412,7 +10710,8 @@
                     "room": "A314",
                     "instructor": "Janita Schappert"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10446,7 +10745,8 @@
                     "room": "A346",
                     "instructor": "Lysbeth Cunada"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10480,7 +10780,8 @@
                     "room": "A229",
                     "instructor": "Cristina Follador"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10505,7 +10806,8 @@
                     "room": "OFFC",
                     "instructor": "Rozana Lee, Andrea Gretchev, Laurisa Tong, Sandeep Atwal, Sukhdev Grewal"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10530,7 +10832,8 @@
                     "room": "OFFC",
                     "instructor": "Nancy Woo, Baljit Khun-Khun, Janita Schappert, Jasprit Jassal, Lysbeth Cunada"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10555,7 +10858,8 @@
                     "room": "OFFC",
                     "instructor": "Maureen Maloney, Patricia Yuet, Pauline Sumel, Shelina Keys, Tara Lum"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10580,7 +10884,8 @@
                     "room": "OFFC",
                     "instructor": "Andree Bamforth, Bernard Hickey, Paula Maisonville, Simer Basi"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10605,7 +10910,8 @@
                     "room": "B245",
                     "instructor": "Mary Kruger"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10630,7 +10936,8 @@
                     "room": "B246",
                     "instructor": "Veryl Tipliski"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10664,7 +10971,8 @@
                     "room": "WWW",
                     "instructor": "Kim Soltysik"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10698,7 +11006,8 @@
                     "room": "WWW",
                     "instructor": "Patricia Woods"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10732,7 +11041,8 @@
                     "room": "OFFC",
                     "instructor": "Lillian Alexus, Mary Kruger, Susan McDonald"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10766,7 +11076,8 @@
                     "room": "OFFC",
                     "instructor": "Patricia Woods, Veryl Tipliski"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10791,7 +11102,8 @@
                     "room": "L304",
                     "instructor": "Sukhdev Grewal"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -10816,7 +11128,8 @@
                     "room": "L342",
                     "instructor": "Melanie Forseng"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -10841,7 +11154,8 @@
                     "room": "B149",
                     "instructor": "Kurt Preinsperg"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -10866,7 +11180,8 @@
                     "room": "B149",
                     "instructor": "Kurt Preinsperg"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -10891,7 +11206,8 @@
                     "room": "B149",
                     "instructor": "Kurt Preinsperg"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -10925,7 +11241,8 @@
                     "room": "A122B",
                     "instructor": "Johnna Fisher"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -10959,7 +11276,8 @@
                     "room": "A122B",
                     "instructor": "Johnna Fisher"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -10993,7 +11311,8 @@
                     "room": "A122B",
                     "instructor": "Wayne Henry"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11027,7 +11346,8 @@
                     "room": "A122B",
                     "instructor": "Wayne Henry"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11061,7 +11381,8 @@
                     "room": "B018",
                     "instructor": "Wayne Henry"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11095,7 +11416,8 @@
                     "room": "B018",
                     "instructor": "Johnna Fisher"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11120,7 +11442,8 @@
                     "room": "B149",
                     "instructor": "Kurt Preinsperg"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11154,7 +11477,8 @@
                     "room": "B251",
                     "instructor": "Johnna Fisher"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11215,7 +11539,8 @@
                     "room": "A350",
                     "instructor": "Benoite Pfeiffer"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11258,7 +11583,8 @@
                     "room": "A346",
                     "instructor": "Don Hunter"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11301,7 +11627,8 @@
                     "room": "A314",
                     "instructor": "Pari Ranjbary"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11344,7 +11671,8 @@
                     "room": "A351",
                     "instructor": "Pari Ranjbary"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11387,7 +11715,8 @@
                     "room": "A352",
                     "instructor": "Don Hunter"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11430,7 +11759,8 @@
                     "room": "A347",
                     "instructor": "Pari Ranjbary"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11473,7 +11803,8 @@
                     "room": "A314",
                     "instructor": "Don Hunter"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11507,7 +11838,8 @@
                     "room": "B247",
                     "instructor": "Stephen Phillips"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11532,7 +11864,8 @@
                     "room": "B153",
                     "instructor": "Ramjee Parajulee"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11566,7 +11899,8 @@
                     "room": "WWW",
                     "instructor": "Stephen Phillips"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11600,7 +11934,8 @@
                     "room": "B149",
                     "instructor": "Stephen Phillips"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11634,7 +11969,8 @@
                     "room": "WWW",
                     "instructor": "Stephen Phillips"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11677,7 +12013,8 @@
                     "room": "A136B",
                     "instructor": "David Scougal"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11720,7 +12057,8 @@
                     "room": "A136B",
                     "instructor": "David Scougal"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11754,7 +12092,8 @@
                     "room": "A130",
                     "instructor": "Valerie Lloyd"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11806,7 +12145,8 @@
                     "room": "A320",
                     "instructor": "James Barton, Linda Scratchley, Shirley Louth"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11840,7 +12180,8 @@
                     "room": "A130",
                     "instructor": "Linda Scratchley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -11874,7 +12215,8 @@
                     "room": "A130",
                     "instructor": "James Barton"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11926,7 +12268,8 @@
                     "room": "B248",
                     "instructor": "Shirley Louth"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11960,7 +12303,8 @@
                     "room": "B147",
                     "instructor": "Linda Scratchley"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -11994,7 +12338,8 @@
                     "room": "A310",
                     "instructor": "James Barton"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12028,7 +12373,8 @@
                     "room": "B147",
                     "instructor": "Valerie Lloyd"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -12071,7 +12417,8 @@
                     "room": "A247",
                     "instructor": "Kevin McMillan"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -12114,7 +12461,8 @@
                     "room": "A247",
                     "instructor": "Mahmoud Abdel-Hai"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "RP",
@@ -12148,7 +12496,8 @@
                     "room": "A247",
                     "instructor": "Kevin Rolston"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12182,7 +12531,8 @@
                     "room": "WWW",
                     "instructor": "Caroline Dickson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12207,7 +12557,8 @@
                     "room": "B148",
                     "instructor": "Timothy Stevenson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12241,7 +12592,8 @@
                     "room": "B148",
                     "instructor": "Timothy Stevenson"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12275,7 +12627,8 @@
                     "room": "A122A",
                     "instructor": "Alan Brain"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12309,7 +12662,8 @@
                     "room": "WWW",
                     "instructor": "Sandra Enns"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12343,7 +12697,8 @@
                     "room": "A122B",
                     "instructor": "Alan Brain"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12377,7 +12732,8 @@
                     "room": "A122B",
                     "instructor": "Alan Brain"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12411,7 +12767,8 @@
                     "room": "A338",
                     "instructor": "Dolores Gambroudes"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12445,7 +12802,8 @@
                     "room": "B153",
                     "instructor": "Michael Lo"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12479,7 +12837,8 @@
                     "room": "B152",
                     "instructor": "Cheryl McKeeman"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12513,7 +12872,8 @@
                     "room": "B155",
                     "instructor": "Emmanuel Darkoh"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": null,
@@ -12547,7 +12907,8 @@
                     "room": "B148",
                     "instructor": "Albert Wong"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12581,7 +12942,8 @@
                     "room": "B148",
                     "instructor": "Edgar Avelino"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12615,7 +12977,8 @@
                     "room": "B154",
                     "instructor": "Peter Danenhower"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12649,7 +13012,8 @@
                     "room": "B253",
                     "instructor": "Michael Lo"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12683,7 +13047,8 @@
                     "room": "B254",
                     "instructor": "Emmanuel Darkoh"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12708,7 +13073,8 @@
                     "room": "WWW",
                     "instructor": "Cheryl McKeeman"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12733,7 +13099,8 @@
                     "room": "A136A",
                     "instructor": "Albert Wong"
                 }
-            ]
+            ],
+            "yearsemester": null
         },
         {
             "RP": "P",
@@ -12776,7 +13143,8 @@
                     "room": "B251",
                     "instructor": "Cheryl McKeeman"
                 }
-            ]
+            ],
+            "yearsemester": null
         }
     ]
 }
