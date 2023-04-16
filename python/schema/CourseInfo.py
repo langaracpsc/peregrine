@@ -13,15 +13,15 @@ class Prerequisite(BaseModel):
 
   
 class availability(Enum):
-    spring = "spring"
-    summer = "summer"
-    fall = "fall"
-    springsummer = "springsummer"
-    springfall = "springfall"
-    summerfall = "summerfall"
-    all = "all"
-    unknown = "unknown"
-    discontinued="discontinued"
+    spring =        "Spring"
+    summer =        "Summer"
+    fall =          "Fall"
+    springsummer =  "Spring & Summer"
+    springfall =    "Spring & Fall"
+    summerfall =    "Summer & Fall"
+    all =           "All Semesters"
+    unknown =       "Unknown"
+    discontinued =  "Discontinued"
     
 class attributes(Enum):
     AR =  "2AR"
