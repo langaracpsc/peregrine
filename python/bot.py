@@ -4,10 +4,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-from cogs.OnboardingMenu import OnboardingMenu
-from cogs.Admin import Admin
-
-
 class Peregrine:
     def __init__(self, token_name:str):
         self.owner_ids:tuple[int] = (
@@ -20,8 +16,13 @@ class Peregrine:
         bot = discord.Bot(owner_ids=self.owner_ids)
         
         # add cogs
+                
+        from cogs.OnboardingMenu import OnboardingMenu
+        from cogs.Admin import Admin
+        from cogs.CourseInfo import CourseInfo
         bot.add_cog(OnboardingMenu(bot))
         bot.add_cog(Admin(bot))
+        bot.add_cog(CourseInfo(bot))
 
         # TODO: refactor into components folder/files
         from cogs.RolePicker import RoleMenuButton
@@ -35,4 +36,6 @@ class Peregrine:
 
             print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
             
+            
+        
         bot.run(os.getenv(self.token_name))
