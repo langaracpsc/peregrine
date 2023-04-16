@@ -35,4 +35,4 @@ class Peregrine:
 
             print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
             
-        bot.run(os.getenv("DISCORD_BOT_TOKEN"))
+        bot.run(os.getenv(self.token_name))
