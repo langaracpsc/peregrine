@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 from enum import Enum
-import datetime
+from datetime import datetime
 
 from schema.Semester import Course, RPEnum
 from schema.Transfer import Transfer
