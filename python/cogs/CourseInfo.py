@@ -2,7 +2,7 @@ import discord
 from discord import option
 from discord.ext import commands
 import os
-import requests
+import Levenshtein
 
 from schema.CourseInfo import CourseInfoAll, attributes
 from schema.Semester import Semester
@@ -17,14 +17,15 @@ class CourseInfo(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         
+        # TODO: replace this with an api call
+        
         self.AllCourseInfo:CourseInfoAll = CourseInfoAll.parse_file("data/allInfo.json")
         
         self.semesters = []
         for filename in os.listdir("data/json/"):
             self.semesters.append(Semester.parse_file("data/json/" + filename))
     
-    # Executes code on the server
-    # Not very useful tbh
+    # Gets information on a course with data sourced from allInfo.json
     @commands.slash_command(description="Gets information for a course.")
     @option("subject", description="4 letter code of course (e.g. CPSC).")
     @option("course_code", description="4 digit code of course (e.g. 1050).")
@@ -38,28 +39,43 @@ class CourseInfo(commands.Cog):
         subject = subject.upper()
         
         find = None
+        closest = (999, "")
         
         for c in self.AllCourseInfo.courses:
             if c.subject == subject and c.course_code == course_code:
                 find = c
                 break
+            d = Levenshtein.distance(f"{c.subject} {c.course_code}", f"{subject} {course_code}")
+            if d < closest[0]:
+                closest = (d, f"{c.subject} {c.course_code}")
                 
         if find == None:
-            await ctx.respond(f"Couldn't find information for {subject} {course_code}", ephemeral=True)
+            await ctx.respond(f"Could not find `{subject} {course_code}`. Did you mean `{closest[1]}`?", ephemeral=True)
+            #TODO: add a button that says yes here
             return
         else:
             c = find
             
-        embed = discord.Embed(
-            title=f"{subject} {course_code} {c.title}",
-            description=truncate(c.description, 4096),
-            url=f"https://langara.ca/programs-and-courses/courses/{subject}/{course_code}.html",
-        )
+        if c.description == None:
+            embed = discord.Embed(
+                title=f"{subject} {course_code} {c.title}",
+                description="No description found.",
+            )
+        else:    
+            embed = discord.Embed(
+                title=f"{subject} {course_code} {c.title}",
+                description=truncate(c.description, 4096),
+                url=f"https://langara.ca/programs-and-courses/courses/{subject}/{course_code}.html",
+            )
+        
+        avail = c.availability.value
+        if avail != "all":
+            avail = f"⚠️{avail}⚠️"
         
         embed.add_field(name="Credits:", value=c.credits)
         embed.add_field(name="Repeat limit:", value=c.rpt_limit)
         embed.add_field(name="Additional Fees:", value='${:,.2f}'.format(c.add_fees)) # format to $xx.xx
-        embed.add_field(name="Availability:", value=c.availability.value)
+        embed.add_field(name="Availability:", value=avail)
         embed.add_field(name="Semesters offered:", value=len(c.prev_offered))
         embed.add_field(name="Last offered:", value=c.prev_offered[-1])
         
@@ -68,11 +84,17 @@ class CourseInfo(commands.Cog):
             if t.effective_end == "present":
                 # use ljust for better formatting
                 # invis character because discord removes excess spaces
-                transfer_text.append(f"`{t.destination.ljust(5)}` {t.credit}")
+                transfer_text.append(f"`{t.destination.ljust(4)}` {t.credit}")
+                
+                bold = ["SFU", "UBCV"]
+                if t.destination in bold:
+                    transfer_text[-1] = f"__{transfer_text[-1]}__"
+                
+                
         transfer_text = "\n".join(transfer_text)
         transfer_text = truncate(transfer_text, 1000)
         
-        if transfer_text.isspace():
+        if len(transfer_text) == 0:
             transfer_text = "Transfer information not available."
         
         embed.add_field(name="Active transfer agreements:", value=transfer_text, inline=False)
@@ -80,12 +102,14 @@ class CourseInfo(commands.Cog):
 
         # i dislike this so much
         # todo: refactor c.attributes
-        em = lambda s, name: f"✅ **{name}**" if c.attributes[s] else f"❌ {name}"
+        if c.attributes != None:
+            em = lambda s, name: f"✅ **{name}**" if c.attributes[s] else f"❌ {name}"
+            
+            attrs = f"{em('AR', '2AR')} {em('SC', '2SC')} {em('HUM', 'HUM')} {em('LSC', 'LSC')} {em('SCI', 'SCI')} {em('SOC', 'SOC')} {em('UT', 'UT')}"
         
-        attrs = f"{em('AR', '2AR')} {em('2SC', '2SC')} {em('HUM', 'HUM')} {em('LSC', 'LSC')} {em('SCI', 'SCI')} {em('SOC', 'SOC')} {em('UT', 'UT')}"
-       
-        embed.add_field(name="Course attributes:", value=attrs, inline=False)
-
+            embed.add_field(name="Course attributes:", value=attrs, inline=False)
+        else:
+            embed.add_field(name="Course attributes:", value="Course attributes not available.", inline=False)
                 
                 
 
