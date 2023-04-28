@@ -82,7 +82,7 @@ class CourseInfo(commands.Cog):
         # todo: refactor c.attributes
         em = lambda s, name: f"✅ **{name}**" if c.attributes[s] else f"❌ {name}"
         
-        attrs = f"{em('AR', '2AR')} {em('2SC', '2Sc')} {em('HUM', 'HUM')} {em('LSC', 'LSC')} {em('SCI', 'SCI')} {em('SOC', 'SOC')} {em('UT', 'UT')}"
+        attrs = f"{em('AR', '2AR')} {em('2SC', '2SC')} {em('HUM', 'HUM')} {em('LSC', 'LSC')} {em('SCI', 'SCI')} {em('SOC', 'SOC')} {em('UT', 'UT')}"
        
         embed.add_field(name="Course attributes:", value=attrs, inline=False)
 
