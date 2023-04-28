@@ -33,10 +33,3 @@ jobs:
           push: true
           tags: |
             ghcr.io/langaracpsc/peregrine:latest
-            
-      - name: Deploy to server
-        uses: fjogeleit/http-request-action@v1
-        with:
-          url: ${{secrets.WATCHTOWER_URL}}
-          method: 'POST'
-          customHeaders: '{"Authorization": "Bearer ${{secrets.WATCHTOWER_HTTP_API_TOKEN}}" }'
