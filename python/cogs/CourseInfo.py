@@ -69,7 +69,7 @@ class CourseInfo(commands.Cog):
             )
         
         avail = c.availability.value
-        if avail != "all":
+        if avail != "All Semesters":
             avail = f"⚠️{avail}⚠️"
         
         embed.add_field(name="Credits:", value=c.credits)
