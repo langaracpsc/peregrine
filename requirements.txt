@@ -3,3 +3,4 @@ python-dotenv
 requests
 pydantic
 levenshtein
+better_profanity
