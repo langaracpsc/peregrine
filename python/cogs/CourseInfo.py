@@ -18,12 +18,12 @@ class CourseInfo(commands.Cog):
         self.bot = bot
         
         # TODO: replace this with an api call
-        
+        # TODO: find some way to make this faster than 10 seconds
         self.AllCourseInfo:CourseInfoAll = CourseInfoAll.parse_file("data/allInfo.json")
         
-        self.semesters = []
-        for filename in os.listdir("data/json/"):
-            self.semesters.append(Semester.parse_file("data/json/" + filename))
+        #self.semesters = []
+        #for filename in os.listdir("data/json/"):
+        #    self.semesters.append(Semester.parse_file("data/json/" + filename))
     
     # Gets information on a course with data sourced from allInfo.json
     @commands.slash_command(description="Gets information for a course.")
@@ -116,6 +116,9 @@ class CourseInfo(commands.Cog):
         embed.set_footer(text=f"Powered by data from the Langara website and bctransferguide.ca. \nData last updated {self.AllCourseInfo.datetime_retrieved}.")
         
         await ctx.respond(embed=embed)
+        
+    def setup(bot:discord.Bot):
+        bot.add_command(CourseInfo)
 
 # avoid hitting message length errors
 def truncate(s:str, max_length:int, msg="\n(Truncated due to length.)") -> str:
@@ -124,3 +127,5 @@ def truncate(s:str, max_length:int, msg="\n(Truncated due to length.)") -> str:
     else:
         return s[:max_length - len(msg)] + msg
 
+def setup(bot:commands.Bot):
+    bot.add_cog(CourseInfo(bot))

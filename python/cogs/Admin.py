@@ -8,7 +8,6 @@ class Admin(commands.Cog):
         self.bot = bot
     
     # Executes code on the server
-    # Not very useful tbh
     @commands.slash_command(description="For administrative purposes only.")
     @discord.default_permissions(administrator=True)
     async def execute(self, interaction:discord.Interaction, message):
@@ -34,3 +33,6 @@ class Admin(commands.Cog):
                 await requests.post(url, headers=headers)
             except Exception as e:
                 await interaction.respond("Could not establish a connection: " + str(e))
+
+def setup(bot:commands.Bot):
+    bot.add_cog(Admin(bot))
