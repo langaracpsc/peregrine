@@ -1,35 +1,34 @@
 import discord
-import os
 import sys
 from dotenv import load_dotenv
+from os import environ
+
+# Test token exists
 load_dotenv()
+if "DISCORD_BOT_TOKEN" not in environ:
+    raise Exception("Please provide a discord bot token.")
+
+# Initialize bot
+owner_ids:tuple[int] = (
+    221780012372721664, # Highfire1#1942
+)
+bot = discord.Bot(owner_ids=owner_ids)
 
 
-
-from bot import Peregrine
-
-args = sys.argv
-environment = None
-
-
-if len(args) > 2:
-    raise ValueError('Too many arguments! Enter either "dev", "prod", or nothing!')  
-
-# DEVELOPMENT
-elif len(args) == 1 or args[1].startswith("dev"):
-    print("Starting the bot in development mode...")
-    bot = Peregrine(token_name="DISCORD_BOT_TOKEN_DEV")
-    bot.run()
-
-# PRODUCTION
-elif args[1].startswith("prod"):
-    print("Starting the bot in production mode...")
-    bot = Peregrine(token_name="DISCORD_BOT_TOKEN")
-    bot.run()
-
-elif args[1] == "-h":
-    print("Read the source code: https://github.com/langaracpsc/peregrine")
-    sys.exit(1)
+# add cogs
     
-else:
-    raise ValueError(f'Unknown argument "{args[1]}".')
+from cogs.OnboardingMenu import OnboardingMenu
+from cogs.Admin import Admin
+from cogs.CourseInfo import CourseInfo
+
+bot.add_cog(OnboardingMenu(bot))
+bot.add_cog(Admin(bot))
+bot.add_cog(CourseInfo(bot))
+
+@bot.event
+async def on_ready():
+    print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
+    
+    
+
+bot.run(environ.get("DISCORD_BOT_TOKEN"))
