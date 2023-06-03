@@ -11,6 +11,8 @@ from schema.Semester import Semester
 GOALS FOR FUTURE:
 - split transfer information / past offerings into seperate tabs/buttons
 - better formatting
+
+# TODO: comment this better
 '''
 
 class CourseInfo(commands.Cog):
