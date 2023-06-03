@@ -22,7 +22,6 @@ Note that pushing to main will automatically update the live discord bot. (If an
 - `cd peregrine2` to enter the directory
 - `python -m venv venv` to create a virtual environment
 - download the required libraries `python -m pip install -r requirements.txt`
-- download `python -m spacy download en` for filtering #anonymous
 - populate `.env`
 - run with `python python/main.py`
 
