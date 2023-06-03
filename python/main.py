@@ -30,6 +30,7 @@ extensions = (
     "cogs.CourseInfo",
     "cogs.Ephemeral",
     "cogs.AntiSpam",
+    "cogs.Misc"
     )
 bot.load_extensions(*extensions)
 
