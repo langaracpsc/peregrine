@@ -27,15 +27,22 @@ bot = commands.Bot(owner_ids=owner_ids, command_prefix=commands.when_mentioned_o
 
 extensions = (
     "cogs.Admin", 
-    #"cogs.CourseInfo",
-    "cogs.Anonymous",
+    "cogs.CourseInfo",
+    "cogs.Ephemeral",
+    "cogs.AntiSpam",
     )
 bot.load_extensions(*extensions)
 
+# command to initialize async methods in cogs.
+
+async def async_init(bot):
+    await bot.get_cog("Ephemeral").async_init()
+    
 # misc.
+
 @bot.event
 async def on_ready():
-    await async_init()
+    await async_init(bot)
     
     print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
     
@@ -59,7 +66,7 @@ async def reload_extensions(ctx: discord.ApplicationContext, specific_cog:str = 
         except Exception as e:
             reply_msg += str(e) + "\n\n"
             
-    await async_init()
+    await async_init(bot)
     
     end = str(time.time() - start)[:4] 
     reply_msg += f"Extensions reloaded in {end} seconds."
@@ -68,9 +75,3 @@ async def reload_extensions(ctx: discord.ApplicationContext, specific_cog:str = 
 # Launch bot.
 
 bot.run(environ.get("DISCORD_BOT_TOKEN"))
-
-
-# command to initialize async methods in cogs.
-
-async def async_init(bot):
-    await bot.get_cog("Ephemeral").async_init()
