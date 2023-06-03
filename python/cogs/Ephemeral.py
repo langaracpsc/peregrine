@@ -16,7 +16,6 @@ class Ephemeral(commands.Cog):
         self.message_ids: list[int] = []
         
         self.channel = ephemeral_channel
-        self.rules_message = 1114433687564587038
         
         self.delete_after = 60 * 60 * 24 * 2 # 48 hours
         self.check_interval = 60*60 # 1 hour
@@ -64,7 +63,7 @@ class Ephemeral(commands.Cog):
             async for message in self.bot.get_channel(self.channel).history():
                 
                 # don't delete rules
-                if message.id == self.rules_message:
+                if len(message.embeds) == 1 and message.embeds[0].title == "Rules:":
                     continue
                             
                 if ( time.time() - message.created_at.timestamp() ) > self.delete_after:
@@ -80,17 +79,25 @@ class Ephemeral(commands.Cog):
         
         embed = discord.Embed(
             title = "Rules:",
-            description = "- Messages are mirrored by <@896896783123357729>.\n- Messages in this channel delete themselves after 48 hours.\n- Message modmail if you need to delete your message.\n- Server rules still apply.",
+            description = "- Messages are mirrored anonymously by <@896896783123357729>.\n- Messages in this channel delete themselves after 48 hours.\n- Message modmail if you need to delete your message.\n- Server rules still apply.",
+            color = 15548997, # red
         )
         embed.set_footer(text="Like its contents, this channel may disappear in the future.")
 
-        if self.rules_message == None:
-            await self.bot.get_channel(self.channel).send(embed=embed)
-        else:
-            await self.bot.get_channel(self.channel).fetch_message(self.rules_message)
-            await self.bot.get_message(self.rules_message).edit(embed=embed)
-            await interaction.respond("Done.", ephemeral=True)
+        # search for previous rules embed
+        async for message in self.bot.get_channel(self.channel).history():
             
+            if message.author.id != self.bot.application_id:
+                continue
+                
+            if len(message.embeds) == 1 and message.embeds[0].title == "Rules:":
+                await message.edit(embed=embed)
+                await interaction.respond("Done.", ephemeral=True)
+                return
+            
+        await self.bot.get_channel(self.channel).send(embed=embed)
+        await interaction.respond("Done.", ephemeral=True)
+        
             
 def setup(bot:commands.Bot):
     bot.add_cog(Ephemeral(bot))
