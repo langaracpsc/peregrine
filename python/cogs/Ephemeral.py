@@ -42,11 +42,11 @@ class Ephemeral(commands.Cog):
         
         await message.delete()
         
-        new_text = profanity.censor(message.content)
+        new_text = profanity.censor(message.content, censor_char="\*")
         
         embed = discord.Embed(
             title=f"Ephemeral message:",
-            description=f"{new_text}",
+            description=new_text,
         )
         embed.set_footer(text="This message will disappear in 48 hours.")
 
