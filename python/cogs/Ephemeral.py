@@ -45,9 +45,6 @@ class Ephemeral(commands.Cog):
         if message.channel.id != self.channel:
             return
         
-        if message.content.strip() == "":
-            return
-        
         await message.delete()
                 
         embed = self.generate_embed(message.content, message.author)
