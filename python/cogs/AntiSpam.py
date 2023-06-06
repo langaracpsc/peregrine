@@ -39,6 +39,10 @@ class AntiSpam(commands.Cog):
         if not self.must_have_url and not 'https://' in message.content:
             return
         
+        # don't alert if a moderator sends spam
+        if message.author.guild_permissions.manage_messages:
+            return
+        
         self.recent_messages.append((message.author.id, message.content))
         
         # only save last 20 messages
