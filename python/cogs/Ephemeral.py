@@ -66,7 +66,7 @@ class Ephemeral(commands.Cog):
             title=f"Ephemeral message:",
             description=text,
         )
-        logging_embed.set_footer(text=f"Sent by {interaction.author.display_name} ({interaction.author.id})",
+        logging_embed.set_footer(text=f"Sent by {interaction.author.name} ({interaction.author.id})",
                           icon_url=interaction.author.avatar.url)
         
         await self.bot.get_channel(self.logging_channel).send(embed=logging_embed)
