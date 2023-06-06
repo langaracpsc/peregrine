@@ -66,7 +66,7 @@ class AntiSpam(commands.Cog):
                 
                 embed = discord.Embed(
                     title=f"Potential Spam Detected",
-                    description=f"{m[1]}\n\nThis message was sent `{count}` times by <@{m[0]}>.",
+                    description=f"{m[1]}\n{message.jump_url}\n\nThis message was sent `{count}` times by <@{m[0]}>.",
                 )
                 embed.set_footer(text="If this isn't spam, you can safely ignore this message.")
 
