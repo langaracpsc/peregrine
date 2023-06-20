@@ -31,11 +31,13 @@ class CourseInfo(commands.Cog):
     @commands.slash_command(description="Gets information for a course.")
     @option("subject", description="4 letter code of course (e.g. CPSC).")
     @option("course_code", description="4 digit code of course (e.g. 1050).")
+    @option("verbose", description="Whether to print transfer/attributes/availability information.")
     async def course_info(
         self, 
         ctx:discord.ApplicationContext, 
         subject:str, 
-        course_code:int
+        course_code:int,
+        verbose:bool=True
         ):
         
         subject = subject.upper()
@@ -69,51 +71,53 @@ class CourseInfo(commands.Cog):
                 description=truncate(c.description, 4096),
                 url=f"https://langara.ca/programs-and-courses/courses/{subject}/{course_code}.html",
             )
-        
-        avail = c.availability.value
-        if avail != "All Semesters":
-            avail = f"⚠️{avail}⚠️"
-        
-        embed.add_field(name="Credits:", value=c.credits)
-        embed.add_field(name="Repeat limit:", value=c.rpt_limit)
-        embed.add_field(name="Additional Fees:", value='${:,.2f}'.format(c.add_fees)) # format to $xx.xx
-        embed.add_field(name="Availability:", value=avail)
-        embed.add_field(name="Semesters offered:", value=len(c.prev_offered))
-        embed.add_field(name="Last offered:", value=c.prev_offered[-1])
-        
-        transfer_text = []
-        for t in c.transfer:
-            if t.effective_end == "present":
-                # use ljust for better formatting
-                # invis character because discord removes excess spaces
-                transfer_text.append(f"`{t.destination.ljust(4)}` {t.credit}")
-                
-                bold = ["SFU", "UBCV"]
-                if t.destination in bold:
-                    transfer_text[-1] = f"__{transfer_text[-1]}__"
-                
-                
-        transfer_text = "\n".join(transfer_text)
-        transfer_text = truncate(transfer_text, 1000)
-        
-        if len(transfer_text) == 0:
-            transfer_text = "Transfer information not available."
-        
-        embed.add_field(name="Active transfer agreements:", value=transfer_text, inline=False)
 
-
-        # i dislike this so much
-        # todo: refactor c.attributes
-        if c.attributes != None:
-            em = lambda s, name: f"✅ **{name}**" if c.attributes[s] else f"❌ {name}"
+        if verbose:
             
-            attrs = f"{em('AR', '2AR')} {em('SC', '2SC')} {em('HUM', 'HUM')} {em('LSC', 'LSC')} {em('SCI', 'SCI')} {em('SOC', 'SOC')} {em('UT', 'UT')}"
-        
-            embed.add_field(name="Course attributes:", value=attrs, inline=False)
-        else:
-            embed.add_field(name="Course attributes:", value="Course attributes not available.", inline=False)
+            avail = c.availability.value
+            if avail != "All Semesters":
+                avail = f"⚠️{avail}⚠️"
+            
+            embed.add_field(name="Credits:", value=c.credits)
+            embed.add_field(name="Repeat limit:", value=c.rpt_limit)
+            embed.add_field(name="Additional Fees:", value='${:,.2f}'.format(c.add_fees)) # format to $xx.xx
+            embed.add_field(name="Availability:", value=avail)
+            embed.add_field(name="Semesters offered:", value=len(c.prev_offered))
+            embed.add_field(name="Last offered:", value=c.prev_offered[-1])
+            
+            transfer_text = []
+            for t in c.transfer:
+                if t.effective_end == "present":
+                    # use ljust for better formatting
+                    # invis character because discord removes excess spaces
+                    transfer_text.append(f"`{t.destination.ljust(4)}` {t.credit}")
+                    
+                    bold = ["SFU", "UBCV"]
+                    if t.destination in bold:
+                        transfer_text[-1] = f"__{transfer_text[-1]}__"
+                    
+                    
+            transfer_text = "\n".join(transfer_text)
+            transfer_text = truncate(transfer_text, 1000)
+            
+            if len(transfer_text) == 0:
+                transfer_text = "Transfer information not available."
+            
+            embed.add_field(name="Active transfer agreements:", value=transfer_text, inline=False)
+
+
+            # i dislike this so much
+            # todo: refactor c.attributes
+            if c.attributes != None:
+                em = lambda s, name: f"✅ **{name}**" if c.attributes[s] else f"❌ {name}"
                 
-                
+                attrs = f"{em('AR', '2AR')} {em('SC', '2SC')} {em('HUM', 'HUM')} {em('LSC', 'LSC')} {em('SCI', 'SCI')} {em('SOC', 'SOC')} {em('UT', 'UT')}"
+            
+                embed.add_field(name="Course attributes:", value=attrs, inline=False)
+            else:
+                embed.add_field(name="Course attributes:", value="Course attributes not available.", inline=False)
+                    
+                    
 
         embed.set_footer(text=f"Powered by data from the Langara website and bctransferguide.ca. \nData last updated {self.AllCourseInfo.datetime_retrieved}.")
         
