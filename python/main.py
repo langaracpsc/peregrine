@@ -21,31 +21,36 @@ owner_ids:tuple[int] = (
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(owner_ids=owner_ids, command_prefix=commands.when_mentioned_or("?"), intents=intents)
+bot = commands.Bot(
+    owner_ids=owner_ids, 
+    command_prefix=commands.when_mentioned_or("?"), 
+    intents=intents
+    )
 
 # Import extensions.
 
 extensions = (
     "cogs.Admin", 
-    "cogs.CourseInfo",
-    "cogs.Ephemeral",
+    # "cogs.CourseInfo", # disabled right now due to outdated implementation
+    # "cogs.Ephemeral", # disabled due to bugginess and lack of use
     "cogs.AntiSpam",
     "cogs.Misc"
     )
 bot.load_extensions(*extensions)
 
-# command to initialize async methods in cogs.
 
+# command to initialize any async methods in cogs.
 async def async_init(bot):
-    await bot.get_cog("Ephemeral").async_init()
+    #await bot.get_cog("Ephemeral").async_init()
+    pass
     
-# misc.
-
+# Log when bot starts
 @bot.event
 async def on_ready():
     await async_init(bot)
     
     print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
+    
     
 # Command to reload extensions.
 
