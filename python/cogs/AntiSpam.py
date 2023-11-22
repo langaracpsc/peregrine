@@ -6,7 +6,11 @@ from discord.ext import commands
 from better_profanity import profanity
 
 '''
-Detects if the same message is sent many times in a short interval and pings moderators
+
+Detects if the same message is sent many times in a short interval and pings moderators.
+
+
+
 '''
 class AntiSpam(commands.Cog):
     def __init__(self, bot:commands.Bot):
@@ -19,7 +23,9 @@ class AntiSpam(commands.Cog):
         
         self.stored_messages = 20
         self.trigger_warning = 5
-        self.must_have_url = True
+        
+        self.must_have_url = False
+        self.hash_salt = "langara computer science club!"
         
     
     # Listens to all messages
@@ -31,7 +37,7 @@ class AntiSpam(commands.Cog):
         if message.author.id == self.bot.application_id:
             return
         
-        # ignore discord messages
+        # ignore discord messages (e.g. "message was pinned")
         if message.content.strip() == "":
             return
         
@@ -43,13 +49,15 @@ class AntiSpam(commands.Cog):
         if message.author.guild_permissions.manage_messages:
             return
         
-        self.recent_messages.append((message.author.id, message.content))
+        msg = (message.author.id, hash(self.hash_salt + message.content))
+        self.recent_messages.append(msg)
         
         # only save last 20 messages
         if len(self.recent_messages) > self.stored_messages:
             self.recent_messages.pop(0)
         
         # prevent memory leaks
+        # (although this should NEVER be run because it means that we have had 100 scam alerts)
         if len(self.warned_messages) > 100:
             self.warned_messages.pop(0)        
         
@@ -64,6 +72,7 @@ class AntiSpam(commands.Cog):
             if count >= self.trigger_warning and m[1] not in self.warned_messages:
                 self.warned_messages.append(m[1])
                 
+                # Send warning message to moderators channel.
                 embed = discord.Embed(
                     title=f"Potential Spam Detected",
                     description=f"{m[1]}\n{message.jump_url}\n\nThis message was sent `{count}` times by <@{m[0]}>.",
@@ -72,6 +81,7 @@ class AntiSpam(commands.Cog):
 
                 await self.bot.get_channel(self.moderation_channel).send(content=f"<@&{self.moderator_role}> potential spam detected!",allowed_mentions=discord.AllowedMentions(roles=True))
                 await self.bot.get_channel(self.moderation_channel).send(embed=embed)
+                
                 
 def setup(bot:commands.Bot):
     bot.add_cog(AntiSpam(bot))
