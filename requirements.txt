@@ -4,3 +4,5 @@ requests
 pydantic
 levenshtein
 better_profanity
+
+LangaraCourseInfo

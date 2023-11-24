@@ -18,13 +18,17 @@ owner_ids:tuple[int] = (
     461139809583366154, # coderis.h#1684
 )
 
+debug_guilds = [753037165050593300]  # Add your desired guild IDs here
+
 intents = discord.Intents.default()
 intents.message_content = True
+intents.members = True
 
 bot = commands.Bot(
     owner_ids=owner_ids, 
     command_prefix=commands.when_mentioned_or("?"), 
-    intents=intents
+    intents=intents,
+    debug_guilds=debug_guilds
     )
 
 # Import extensions.
@@ -34,7 +38,8 @@ extensions = (
     # "cogs.CourseInfo", # disabled right now due to outdated implementation
     # "cogs.Ephemeral", # disabled due to bugginess and lack of use
     "cogs.AntiSpam",
-    "cogs.Misc"
+    "cogs.Misc",
+    "cogs.ExecMeetings"
     )
 bot.load_extensions(*extensions)
 
@@ -48,6 +53,10 @@ async def async_init(bot):
 @bot.event
 async def on_ready():
     await async_init(bot)
+    
+    # make buttons persistent through bot restarts
+    from cogs.ExecMeetings import MeetingView
+    bot.add_view(MeetingView())
     
     print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
     
