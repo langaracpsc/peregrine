@@ -36,6 +36,7 @@ jobs:
             ghcr.io/langaracpsc/peregrine:latest
             
   deployment: 
+    needs: docker
     runs-on: ubuntu-latest
     steps:
       - name: Deploy docker package on LCSC server
