@@ -15,7 +15,7 @@ class Admin(commands.Cog):
             await interaction.respond("No watchtower token present.", ephemeral=True)
         else:
             try:
-                url     = 'http://localhost:8080/v1/update'
+                url     = 'https://watchtower.langaracs.tech/v1/update'
                 headers = {"Authorization": f"Bearer {os.getenv('WATCHTOWER_HTTP_API_TOKEN')}"}
                 # go in this order so that the message actually makes it to discord
                 requests.post(url)
