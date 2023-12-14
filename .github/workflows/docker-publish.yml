@@ -6,6 +6,7 @@ on:
       - 'main'
 
 jobs:
+
   docker:
     runs-on: ubuntu-latest
     steps:
@@ -34,6 +35,9 @@ jobs:
           tags: |
             ghcr.io/langaracpsc/peregrine:latest
             
+  deployment: 
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy docker package on LCSC server
         uses: fjogeleit/http-request-action@v1
         with:
