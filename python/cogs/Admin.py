@@ -7,9 +7,11 @@ from discord.ext import commands
 import os
 import requests
 
+from main import extensions # DO NOT DELETE THIS LINE OR COG RELOAD BREAKS
+# I DO NOT KNOW WHY
 
 EMBED_TITLE = "Peregrine Admin Panel"
-EMBED_DESCRIPTION = "Docker Update calls watchtower and asks it to look for updates to any docker images. Reload Peregrine Cogs attempts to hot-reload all code in cogs (but doesn't seem to befunctional). The trash icon deletes the last shown log."
+EMBED_DESCRIPTION = "Docker Update calls watchtower and asks it to look for updates to any docker images. Reload Peregrine Cogs attempts to hot-reload all code in cogs (but doesn't seem to be functional). The trash icon deletes the last shown log."
 
 # helper function for displaying the last log in the selected adminpanelview
 async def replaceEmbed(embedMessage:discord.Message, fieldTitle = None, runRequester = None, fieldText = None) -> discord.Embed:
@@ -74,7 +76,7 @@ class AdminPanelView(discord.ui.View):
         # TODO: fix this
         # deeply cursed, this is very bad
         from main import reload_all_extensions
-        count = await reload_all_extensions()
+        count = reload_all_extensions()
         
         end = str(time.time() - start)[:4]         
         await replaceEmbed(interaction.message, fieldTitle, runRequester, f"Reloaded {count} extensions in {end} seconds.")
