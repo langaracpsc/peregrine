@@ -55,8 +55,14 @@ async def on_ready():
     await async_init(bot)
     
     # make buttons persistent through bot restarts
+    # why can't i do this in setup() ??????
     from cogs.ExecMeetings import MeetingView
+    
+    from cogs.Admin import AdminPanelView
+    
+
     bot.add_view(MeetingView())
+    bot.add_view(AdminPanelView())
     
     print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
     
@@ -86,6 +92,13 @@ async def reload_extensions(ctx: discord.ApplicationContext, specific_cog:str = 
     end = str(time.time() - start)[:4] 
     reply_msg += f"Extensions reloaded in {end} seconds."
     await reply.edit_original_response(content=reply_msg)
+    
+async def reload_all_extensions() -> int:
+    for e in extensions:
+        bot.reload_extension(e)
+       
+    await async_init(bot)
+    return len(extensions)
         
 # Launch bot.
 
