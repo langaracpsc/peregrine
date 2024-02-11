@@ -37,7 +37,7 @@ extensions = (
     "cogs.Admin", 
     # "cogs.CourseInfo", # disabled right now due to outdated implementation
     # "cogs.Ephemeral", # disabled due to bugginess and lack of use
-    "cogs.AntiSpam",
+    # "cogs.AntiSpam", # disabled due to non-compatibility with discord bots
     "cogs.Misc",
     "cogs.ExecMeetings"
     )
