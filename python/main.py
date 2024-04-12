@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-import sys
 import time
 from dotenv import load_dotenv
 from os import environ
@@ -38,8 +37,7 @@ extensions = (
     # "cogs.CourseInfo", # disabled right now due to outdated implementation
     # "cogs.Ephemeral", # disabled due to bugginess and lack of use
     # "cogs.AntiSpam", # disabled due to non-compatibility with discord bots
-    "cogs.Misc",
-    "cogs.ExecMeetings"
+    "cogs.Example",
     )
 bot.load_extensions(*extensions)
 
@@ -56,12 +54,9 @@ async def on_ready():
     
     # make buttons persistent through bot restarts
     # why can't i do this in setup() ??????
-    from cogs.ExecMeetings import MeetingView
     
     from cogs.Admin import AdminPanelView
     
-
-    bot.add_view(MeetingView())
     bot.add_view(AdminPanelView())
     
     print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
