@@ -7,8 +7,6 @@ from discord.ext import commands
 import os
 import requests
 
-from main import extensions # DO NOT DELETE THIS LINE OR COG RELOAD BREAKS
-# I DO NOT KNOW WHY
 
 EMBED_TITLE = "Peregrine Admin Panel"
 EMBED_DESCRIPTION = "Docker Update calls watchtower and asks it to look for updates to any docker images. Reload Peregrine Cogs attempts to hot-reload all code in cogs (but doesn't seem to be functional). The trash icon deletes the last shown log."
