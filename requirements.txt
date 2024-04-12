@@ -2,7 +2,5 @@ py-cord
 python-dotenv
 requests
 pydantic
-levenshtein
-better_profanity
 
 LangaraCourseInfo
