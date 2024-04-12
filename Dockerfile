@@ -22,7 +22,6 @@ RUN pip install --no-cache /wheels/*
 
 # get all files of the bot
 COPY /python .
-COPY .env .env
 
 # run code
 CMD ["python3", "main.py", "prod"]
