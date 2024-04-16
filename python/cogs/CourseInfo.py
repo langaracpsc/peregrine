@@ -2,8 +2,6 @@ import discord
 from discord import option
 from discord.ext import commands, pages
 
-import Levenshtein
-
 import asyncio
 import requests
 import json
@@ -143,6 +141,10 @@ class CourseInfo(commands.Cog):
             if o["seats"] == "Cancel":
                 semesters_c[f'{o["year"]}{o["term"]}'] += 1
         
+        # an explanation of the printing process:
+        # printing one giant list looks ugly and bad
+        # therefore we split it into three fields in the embed so they can be side to side
+        
         out1 = []
         out2 = []
         out3 = []
@@ -178,12 +180,9 @@ class CourseInfo(commands.Cog):
         out1 = "\n".join(out1)
         out2 = "\n".join(out2)
         out3 = "\n".join(out3)
-        
-        print(semesters_c)
-        
+                
         embed.description = "**Previous Offerings:**"
         
-        # We could have 4000 chars if we use the embed description instead of a field, but thats too much text
         if (out1 != ""):
             embed.add_field(name="2020 - now:", value=f"```{out1}```", inline=True)
         if (out2 != ""):
@@ -242,10 +241,11 @@ class CourseView(discord.ui.View):
             "page" : "info"
         }
         
-        if "transfer" in str(embed.description).lower():
-            out["page"] = "transfer"
-        elif "previous" in str(embed.description).lower():
-            out["page"] = "previous"
+        # could be useful in future but not now
+        # if "transfer" in str(embed.fields[0].name).lower():
+        #     out["page"] = "transfer"
+        # elif "previous" in str(embed.description).lower():
+        #     out["page"] = "previous"
 
         return out
         
