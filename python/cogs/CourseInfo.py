@@ -205,13 +205,11 @@ class CourseInfo(commands.Cog):
     @commands.slash_command(description="Gets information for a course.")
     @option("subject", description="4 letter code of course (e.g. CPSC).")
     @option("course_code", description="4 digit code of course (e.g. 1050).")
-    @option("verbose", description="Whether to print transfer/attributes/availability information.")
-    async def course_info_testing(
+    async def course_info(
         self, 
         ctx:discord.ApplicationContext, 
         subject:str, 
         course_code:int,
-        verbose:bool=True
         ):
         
         # Get and parse API response
