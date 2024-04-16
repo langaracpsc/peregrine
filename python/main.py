@@ -34,7 +34,7 @@ bot = commands.Bot(
 
 extensions = (
     "cogs.Admin", 
-    # "cogs.CourseInfo", # disabled right now due to outdated implementation
+    "cogs.CourseInfo", # disabled right now due to outdated implementation
     # "cogs.Ephemeral", # disabled due to bugginess and lack of use
     # "cogs.AntiSpam", # disabled due to non-compatibility with discord bots
     "cogs.Example",
@@ -56,8 +56,10 @@ async def on_ready():
     # why can't i do this in setup() ??????
     
     from cogs.Admin import AdminPanelView
+    from cogs.CourseInfo import CourseView
     
     bot.add_view(AdminPanelView())
+    bot.add_view(CourseView())
     
     print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
     

@@ -1,3 +1,4 @@
+asyncio
 py-cord
 python-dotenv
 requests
