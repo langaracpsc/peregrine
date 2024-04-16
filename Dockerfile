@@ -24,4 +24,5 @@ RUN pip install --no-cache /wheels/*
 COPY /python .
 
 # run code
-CMD ["python3", "main.py", "prod"]
+ENTRYPOINT [ "python3", "main.py"]
+# CMD ["prod"]
