@@ -13,6 +13,8 @@ Come chat in #club-projects on our discord server if you have any questions or c
 
 ## Instructions
 
+Requires Python 3.7+
+
 This project is setup to be run with Docker on our cloud [server](https://github.com/langaracpsc/server/tree/main), but you can also run it by itself for testing/development.
 
 
