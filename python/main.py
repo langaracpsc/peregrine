@@ -12,90 +12,53 @@ if "DISCORD_BOT_TOKEN" not in environ:
 
 # Initialize bot.
 
-owner_ids:tuple[int] = (
-    221780012372721664, # Highfire1#1942
-    461139809583366154, # coderis.h#1684
-)
 
-debug_guilds = [753037165050593300, 714354863349170187]  # Add your desired guild IDs here
+debug_guilds = [
+    753037165050593300, # LCSC Discord Server
+    714354863349170187,  # private testing server
+    511924606651727895
+]
 
 intents = discord.Intents.default()
-intents.message_content = True
-intents.members = True
+# intents.message_content = True
+# intents.members = True
 
 bot = commands.Bot(
-    owner_ids=owner_ids, 
     command_prefix=commands.when_mentioned_or("?"), 
     intents=intents,
     debug_guilds=debug_guilds
     )
 
-# Import extensions.
 
+# Import extensions
 extensions = (
-    "cogs.Admin", 
-    "cogs.CourseInfo", # disabled right now due to outdated implementation
+    "cogs.Admin",
+    "cogs.CourseInfo",
     # "cogs.Ephemeral", # disabled due to bugginess and lack of use
     # "cogs.AntiSpam", # disabled due to non-compatibility with discord bots
     "cogs.Example",
     )
 bot.load_extensions(*extensions)
 
-
 # # command to initialize any async methods in cogs.
 # async def async_init(bot):
 #     #await bot.get_cog("Ephemeral").async_init()
 #     pass
     
-# Log when bot starts
 @bot.event
-async def on_ready():
-    # await async_init(bot)
-    
-    # make buttons persistent through bot restarts
-    # why can't i do this in setup() ??????
-    
+async def on_ready():    
+    # Make the views persistent
+    # Unfortunately, it seems like this must be done here and not in setup() in the cogs
     from cogs.Admin import AdminPanelView
     from cogs.CourseInfo import CourseView
     
     bot.add_view(AdminPanelView())
     bot.add_view(CourseView())
     
-    print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
-    
-    
-# Command to reload extensions.
-
-@bot.slash_command(name="reload_extensions")    
-@discord.default_permissions(administrator=True) 
-async def reload_extensions(ctx: discord.ApplicationContext, specific_cog:str = None):
-    start = time.time()
-    reply = await ctx.respond(content="Reloading extensions...", ephemeral=True)
-    
-    reload = extensions
-    if specific_cog != None:
-        reload = (specific_cog)
-    
-    reply_msg = ""
-    
-    for e in reload:
-        try:
-            bot.reload_extension(e)
-        except Exception as e:
-            reply_msg += str(e) + "\n\n"
-            
     # await async_init(bot)
     
-    end = str(time.time() - start)[:4] 
-    reply_msg += f"Extensions reloaded in {end} seconds."
-    await reply.edit_original_response(content=reply_msg)
-    
-def reload_all_extensions() -> int:
-    for e in extensions:
-        bot.reload_extension(e)
-       
-    return len(extensions)
-        
-# Launch bot.
+    print(f"Logged in as {bot.user}! (ID: {bot.user.id})\n")
 
+
+# Launch bot.
 bot.run(environ.get("DISCORD_BOT_TOKEN"))

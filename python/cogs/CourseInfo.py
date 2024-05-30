@@ -32,7 +32,7 @@ class CourseInfo(commands.Cog):
     # Create a base template embed - since this is reused it deserves its own function.
     def createBaseEmbed(subject: str, course_code: int, data:dict) -> discord.Embed:        
         embed = discord.Embed(
-            title=f"{subject} {course_code} {data['courseInfo']['title']}",
+            title=f"{subject.upper()} {course_code} {data['courseInfo']['title']}",
             url=f"https://langara.ca/programs-and-courses/courses/{subject}/{course_code}.html"
         )     
             
@@ -96,8 +96,18 @@ class CourseInfo(commands.Cog):
             if t[3] in bold:
                 continue
             
-            # funny regex to get the number of credits the transfer is worth
-            elif float(re.findall(r"([0-9]*)", t[4].split('(')[-1])[0]) != float(data["courseInfo"]["credits"]):
+            
+            # BUGFIX BECAUSE ONE OF THESE TWO RETURNS AN EMPTY STRING SOMETIMES,
+            # DONT KNOW WHY
+            try:
+                x = float(re.findall(r"([0-9]*)", t[4].split('(')[-1])[0])
+                y = float(data["courseInfo"]["credits"])
+            except:
+                transfers_cleaned.append(f"{t[3].ljust(4)}\u1CBC➖ {t[4]}")
+                continue
+            
+            
+            if float(re.findall(r"([0-9]*)", t[4].split('(')[-1])[0]) != float(data["courseInfo"]["credits"]):
                 transfers_cleaned.append(f"{t[3].ljust(4)}\u1CBC⚠️ {t[4]}")
             else:
                 transfers_cleaned.append(f"{t[3].ljust(4)}\u1CBC➖ {t[4]}")

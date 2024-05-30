@@ -7,6 +7,8 @@ from discord.ext import commands
 import os
 import requests
 
+from main import extensions
+
 
 EMBED_TITLE = "Peregrine Admin Panel"
 EMBED_DESCRIPTION = "Docker Update calls watchtower and asks it to look for updates to any docker images. Reload Peregrine Cogs attempts to hot-reload all code in cogs (but doesn't seem to be functional). The trash icon deletes the last shown log."
@@ -71,10 +73,8 @@ class AdminPanelView(discord.ui.View):
         
         await replaceEmbed(interaction.message, fieldTitle, runRequester, "Reloading extensions...")
 
-        # TODO: fix this
-        # deeply cursed, this is very bad
-        from main import reload_all_extensions
-        count = reload_all_extensions()
+        
+        count = Admin.reload_all_extensions(self.bot)
         
         end = str(time.time() - start)[:4]         
         await replaceEmbed(interaction.message, fieldTitle, runRequester, f"Reloaded {count} extensions in {end} seconds.")
@@ -89,7 +89,7 @@ class AdminPanelView(discord.ui.View):
         
 
 class Admin(commands.Cog):
-    def __init__(self, bot):
+    def __init__(self, bot:discord.Bot):
         self.bot = bot
 
     # TODO: write permission check so only user with certain roles can use this menu
@@ -102,7 +102,38 @@ class Admin(commands.Cog):
             description=EMBED_DESCRIPTION
         )
 
-        await ctx.respond(embed=embed, view=AdminPanelView())    
+        await ctx.respond(embed=embed, view=AdminPanelView())   
     
+        
+    # Command to reload extensions.
+    @commands.slash_command(name="reload_extensions")    
+    @discord.default_permissions(administrator=True) 
+    async def reload_extensions(self, ctx: discord.ApplicationContext, specific_cog:str = None):
+        start = time.time()
+        reply = await ctx.respond(content="Reloading extensions...", ephemeral=True)
+        
+        reload = extensions
+        if specific_cog != None:
+            reload = (specific_cog)
+        
+        reply_msg = ""
+        
+        for e in reload:
+            try:
+                self.bot.reload_extension(e)
+            except Exception as e:
+                reply_msg += str(e) + "\n\n"
+                    
+        end = str(time.time() - start)[:4] 
+        reply_msg += f"Extensions reloaded in {end} seconds."
+        await reply.edit_original_response(content=reply_msg)
+        
+    def reload_all_extensions(bot:discord.Bot) -> int:
+        for e in extensions:
+            bot.reload_extension(e)
+        
+        return len(extensions)
+            
+        
 def setup(bot:commands.Bot):
     bot.add_cog(Admin(bot))
