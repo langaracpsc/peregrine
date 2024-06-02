@@ -16,7 +16,7 @@ if "DISCORD_BOT_TOKEN" not in environ:
 debug_guilds = [
     753037165050593300, # LCSC Discord Server
     714354863349170187,  # private testing server
-    511924606651727895
+    # 511924606651727895
 ]
 
 intents = discord.Intents.default()
@@ -24,8 +24,8 @@ intents = discord.Intents.default()
 # intents.members = True
 
 bot = commands.Bot(
-    command_prefix=commands.when_mentioned_or("?"), 
-    intents=intents,
+    # command_prefix=commands.when_mentioned_or("?"), 
+    # intents=intents,
     debug_guilds=debug_guilds
     )
 
@@ -37,6 +37,7 @@ extensions = (
     # "cogs.Ephemeral", # disabled due to bugginess and lack of use
     # "cogs.AntiSpam", # disabled due to non-compatibility with discord bots
     "cogs.Example",
+    "cogs.Snippets"
     )
 bot.load_extensions(*extensions)
 
