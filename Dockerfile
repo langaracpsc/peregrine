@@ -21,7 +21,7 @@ COPY --from=builder /app/requirements.txt .
 RUN pip install --no-cache /wheels/*
 
 # get all files of the bot
-COPY /python .
+COPY . .
 
 # run code
 ENTRYPOINT [ "python3", "main.py"]
