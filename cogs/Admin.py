@@ -41,7 +41,7 @@ class AdminPanelView(discord.ui.View):
         else:
             
             try:
-                url     = 'https://watchtower.langaracs.tech/v1/update'
+                url     = 'https://watchtower.langaracs.ca/v1/update'
                 headers = {"Authorization": f"Bearer {os.getenv('WATCHTOWER_HTTP_API_TOKEN')}"}
                 # go in this order so that the message actually makes it to discord
                 
