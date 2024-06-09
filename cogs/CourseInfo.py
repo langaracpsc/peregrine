@@ -24,7 +24,7 @@ class CourseInfo(commands.Cog):
         
     # Call API
     async def getCourseFromAPI(subject:str, course_code:int) -> requests.Response:
-        API_URL = "https://api2.langaracs.tech/data/"
+        API_URL = "https://api2.langaracs.ca/data/"
         
         result = await asyncio.to_thread(requests.get, f"{API_URL}{subject}/{course_code}")
         return result
